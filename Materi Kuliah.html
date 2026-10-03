@@ -1,0 +1,2246 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://darlis-its.github.io/materi-gim-cerdas/#12-membuat-ground -->
+<html lang="id" data-theme="dark" data-background="on" style="--learning-bg-image: url(https://darlis-its.github.io/materi-gim-cerdas/assets/dark-bg-DIVyMODs.webp);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Kuliah</title>
+    <link rel="icon" href="https://darlis-its.github.io/materi-gim-cerdas/assets/favicon-Cjcz0nfk.ico" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Materi Kuliah_files/css2" rel="stylesheet">
+    <script type="module" crossorigin="" src="./Materi Kuliah_files/index-DZIMYTo4.js.download"></script>
+    <link rel="stylesheet" crossorigin="" href="./Materi Kuliah_files/index-BDO1nCGl.css">
+  </head>
+  <body>
+    <div id="root"><div class="app-shell sidebar-collapsed background-enabled"><aside class="sidebar collapsed"><button class="brand"><span class="brand-icon"><span class="material-symbols-rounded icon">school</span></span><strong class="brand-title">Game Cerdas</strong></button><button class="nav-item"><span class="material-symbols-rounded icon">dashboard</span> <span class="nav-text">Beranda</span></button><button class="nav-item"><span class="material-symbols-rounded icon">assignment</span> <span class="nav-text">RPS</span></button><div class="nav-label">Pertemuan</div><button class="nav-item"><span class="nav-number">00</span><span class="nav-text">Rencana Pembelajaran, CPMK, dan Ringkasan Materi Semester</span></button><button class="nav-item"><span class="nav-number">01</span><span class="nav-text">Introduction to Intelligent Games &amp; Game AI</span></button><button class="nav-item"><span class="nav-number">02</span><span class="nav-text">AI Architecture &amp; Game Agent</span></button><button class="nav-item"><span class="nav-number">03</span><span class="nav-text">Movement AI &amp; Steering Behaviors</span></button><button class="nav-item"><span class="nav-number">04</span><span class="nav-text">Pathfinding &amp; Navigation</span></button><button class="active nav-item"><span class="nav-number">05</span><span class="nav-text">Finite State Machine</span></button><button class="nav-item"><span class="nav-number">06</span><span class="nav-text">Behavior Tree &amp; Utility-Based AI</span></button><button class="nav-item"><span class="nav-number">07</span><span class="nav-text">Game AI Integration &amp; Tactical AI</span></button><button class="nav-item"><span class="nav-number">08</span><span class="nav-text">UTS / Mini Project</span></button><button class="nav-item"><span class="nav-number">09</span><span class="nav-text">Procedural Content Generation</span></button><button class="nav-item"><span class="nav-number">10</span><span class="nav-text">PCG for Level &amp; Dungeon Generation</span></button><button class="nav-item"><span class="nav-number">11</span><span class="nav-text">Dynamic Difficulty Adjustment</span></button><button class="nav-item"><span class="nav-number">12</span><span class="nav-text">Player Modeling &amp; Adaptive Game AI</span></button><button class="nav-item"><span class="nav-number">13</span><span class="nav-text">Machine Learning for Games</span></button><button class="nav-item"><span class="nav-number">14</span><span class="nav-text">Reinforcement Learning with Unity ML-Agents</span></button><button class="nav-item"><span class="nav-number">15</span><span class="nav-text">Advanced Game AI &amp; Final Project Development</span></button></aside><main class="main"><header class="topbar"><button class="icon-button" aria-label="Toggle sidebar" title="Expand sidebar"><span class="material-symbols-rounded icon">menu</span></button><div><p>2026/2027 Gasal</p><h1>Game Cerdas</h1></div><div class="topbar-actions"><label class="search"><span class="material-symbols-rounded icon">search</span><input placeholder="Cari materi..." value=""></label><button class="icon-button" aria-label="Toggle dark light mode" title="Light mode"><span class="material-symbols-rounded icon">light_mode</span></button><button class="icon-button" aria-label="Toggle background" title="Matikan background"><span class="material-symbols-rounded icon">wallpaper</span></button></div></header><section class="content"><div class="page-title"><div><p>Pertemuan 05</p><h2>Finite State Machine</h2></div></div><div class="meeting-mode-row"><div class="segmented content-mode-toggle meeting-mode-toggle"><button class=""><span class="material-symbols-rounded icon">auto_stories</span> Slide</button><button class="selected"><span class="material-symbols-rounded icon">terminal</span> Praktikum</button></div></div><div class="reader-layout"><aside class="outline"><div class="outline-title"><span class="material-symbols-rounded icon">format_list_bulleted</span> Outline</div><a href="https://darlis-its.github.io/materi-gim-cerdas/#modul-praktikum-05">MODUL PRAKTIKUM 05</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#finite-state-machine-fsm">FINITE STATE MACHINE (FSM)</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#enemy-ai-patrol-chase-attack-flee">Enemy AI: Patrol → Chase → Attack → Flee</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#1-tujuan-praktikum">1. Tujuan Praktikum</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#2-capaian-pembelajaran-praktikum">2. Capaian Pembelajaran Praktikum</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#3-gambaran-sistem">3. Gambaran Sistem</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#4-rekomendasi-implementasi-praktikum">4. Rekomendasi Implementasi Praktikum</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#mengapa-menggunakan-enum-fsm">Mengapa menggunakan Enum FSM?</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#5-rekomendasi-nama-project">5. Rekomendasi Nama Project</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#6-struktur-folder-project">6. Struktur Folder Project</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#7-persiapan-project-unity">7. Persiapan Project Unity</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#langkah-1-membuat-project">Langkah 1 — Membuat Project</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#8-memasang-ai-navigation">8. Memasang AI Navigation</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#9-apa-itu-navmesh">9. Apa Itu NavMesh?</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#10-apa-itu-navmeshagent">10. Apa Itu NavMeshAgent?</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#11-membuat-scene">11. Membuat Scene</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#12-membuat-ground">12. Membuat Ground</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#13-membuat-obstacle">13. Membuat Obstacle</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#14-membuat-navmeshsurface">14. Membuat NavMeshSurface</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#15-membuat-player">15. Membuat Player</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#16-tag-player">16. Tag Player</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#apa-itu-tag">Apa Itu Tag?</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#17-tag-dan-layer-tidak-sama">17. Tag dan Layer Tidak Sama</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#18-membuat-layer-obstacle">18. Membuat Layer Obstacle</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#19-membuat-player-controller">19. Membuat Player Controller</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#apa-itu-charactercontroller">Apa Itu CharacterController?</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#20-penjelasan-script-player">20. Penjelasan Script Player</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#requirecomponent">`RequireComponent`</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#serializefield">`SerializeField`</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#timedeltatime">`Time.deltaTime`</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#21-membuat-patrol-waypoints">21. Membuat Patrol Waypoints</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#22-apa-itu-waypoint">22. Apa Itu Waypoint?</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#23-membuat-enemy">23. Membuat Enemy</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#24-menambahkan-navmeshagent">24. Menambahkan NavMeshAgent</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#25-membuat-perception-system">25. Membuat Perception System</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#26-cara-kerja-perception">26. Cara Kerja Perception</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#27-apa-itu-physicsraycast">27. Apa Itu Physics.Raycast?</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#28-apa-itu-layermask">28. Apa Itu LayerMask?</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#29-setting-enemyperception">29. Setting EnemyPerception</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#30-membuat-enemy-health">30. Membuat Enemy Health</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#31-membuat-player-health">31. Membuat Player Health</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#32-membuat-safe-point">32. Membuat Safe Point</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#33-state-fsm">33. State FSM</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#34-membuat-enemyfsm">34. Membuat EnemyFSM</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#35-memahami-enum">35. Memahami Enum</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#36-currentstate">36. currentState</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#37-fungsi-changestate">37. Fungsi ChangeState()</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#38-enterstate">38. EnterState()</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#39-update-state">39. Update State</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#40-exitstate">40. ExitState()</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#41-state-patrol">41. State Patrol</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#42-state-chase">42. State Chase</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#43-player-hilang-dan-timer">43. Player Hilang dan Timer</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#44-state-attack">44. State Attack</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#45-mengapa-attack-membutuhkan-cooldown">45. Mengapa Attack Membutuhkan Cooldown?</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#46-hysteresis-pada-attack-range">46. Hysteresis pada Attack Range</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#hysteresis">Hysteresis</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#47-state-flee">47. State Flee</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#48-mengapa-digunakan-fleetriggered">48. Mengapa Digunakan `fleeTriggered`?</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#49-state-dead">49. State Dead</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#global-transition">Global Transition</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#50-transition-priority">50. Transition Priority</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#51-membuat-test-attack-player">51. Membuat Test Attack Player</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#52-konfigurasi-enemyfsm-di-inspector">52. Konfigurasi EnemyFSM di Inspector</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#references">References</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#patrol">Patrol</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#chase">Chase</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#attack">Attack</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#flee">Flee</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#53-parameter-rekomendasi">53. Parameter Rekomendasi</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#54-cara-pengujian-praktikum">54. Cara Pengujian Praktikum</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#test-1-patrol">Test 1 — Patrol</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#55-test-2-detection">55. Test 2 — Detection</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#56-test-3-field-of-view">56. Test 3 — Field of View</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#57-test-4-line-of-sight">57. Test 4 — Line of Sight</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#58-test-5-chase">58. Test 5 — Chase</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#59-test-6-attack">59. Test 6 — Attack</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#60-test-7-attack-hysteresis">60. Test 7 — Attack Hysteresis</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#61-test-8-lost-player-timer">61. Test 8 — Lost Player Timer</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#62-test-9-flee">62. Test 9 — Flee</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#63-test-10-dead">63. Test 10 — Dead</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#64-visual-debugging-dengan-gizmos">64. Visual Debugging dengan Gizmos</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#65-apa-itu-gizmos">65. Apa Itu Gizmos?</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#66-debugging-fsm">66. Debugging FSM</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#67-tabel-transition-praktikum">67. Tabel Transition Praktikum</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#68-diagram-fsm-final">68. Diagram FSM Final</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#69-hubungan-setiap-script">69. Hubungan Setiap Script</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#70-separation-of-concern">70. Separation of Concern</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#enemyperception">EnemyPerception</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#enemyhealth">EnemyHealth</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#enemyfsm">EnemyFSM</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#navmeshagent">NavMeshAgent</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#71-istilah-teknis-unity-yang-digunakan">71. Istilah Teknis Unity yang Digunakan</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#gameobject">GameObject</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#component">Component</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#transform">Transform</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#inspector">Inspector</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#serializefield">SerializeField</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#monobehaviour">MonoBehaviour</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#awake">Awake()</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#start">Start()</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#update">Update()</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#getcomponent">GetComponent</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#vector3">Vector3</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#vector3distance">Vector3.Distance</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#quaternion">Quaternion</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#physicsraycast">Physics.Raycast</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#layermask">LayerMask</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#navmeshsurface">NavMeshSurface</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#navmeshagent">NavMeshAgent</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#setdestination">SetDestination()</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#isstopped">isStopped</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#pathpending">pathPending</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#remainingdistance">remainingDistance</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#72-masalah-umum-dan-troubleshooting">72. Masalah Umum dan Troubleshooting</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#masalah-1">Masalah 1</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#73-error-setdestination">73. Error SetDestination</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#74-enemy-tidak-melihat-player">74. Enemy Tidak Melihat Player</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#75-enemy-bisa-melihat-menembus-tembok">75. Enemy Bisa Melihat Menembus Tembok</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#76-enemy-tidak-patrol">76. Enemy Tidak Patrol</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#77-enemy-tidak-attack">77. Enemy Tidak Attack</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#78-enemy-tidak-flee">78. Enemy Tidak Flee</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#79-enemy-tidak-menuju-safepoint">79. Enemy Tidak Menuju SafePoint</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#80-npc-berganti-state-terlalu-cepat">80. NPC Berganti State Terlalu Cepat</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#81-eksperimen-mahasiswa-1-vision-range">81. Eksperimen Mahasiswa 1 — Vision Range</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#82-eksperimen-mahasiswa-2-vision-angle">82. Eksperimen Mahasiswa 2 — Vision Angle</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#83-eksperimen-mahasiswa-3-patrol-vs-chase-speed">83. Eksperimen Mahasiswa 3 — Patrol vs Chase Speed</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#84-eksperimen-mahasiswa-4-attack-range">84. Eksperimen Mahasiswa 4 — Attack Range</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#85-eksperimen-mahasiswa-5-low-health-threshold">85. Eksperimen Mahasiswa 5 — Low Health Threshold</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#86-eksperimen-mahasiswa-6-attack-cooldown">86. Eksperimen Mahasiswa 6 — Attack Cooldown</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#87-tugas-pengembangan-opsional-search-state">87. Tugas Pengembangan Opsional — Search State</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#88-tugas-pengembangan-opsional-alert-state">88. Tugas Pengembangan Opsional — Alert State</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#89-tugas-pengembangan-opsional-heal">89. Tugas Pengembangan Opsional — Heal</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#90-tugas-pengembangan-opsional-animation">90. Tugas Pengembangan Opsional — Animation</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#91-evaluasi-praktikum">91. Evaluasi Praktikum</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#92-pertanyaan-analisis">92. Pertanyaan Analisis</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#93-alur-keseluruhan-praktikum">93. Alur Keseluruhan Praktikum</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#94-konsep-ai-yang-telah-digabungkan">94. Konsep AI yang Telah Digabungkan</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#95-rekomendasi-praktikum-terbaik">95. Rekomendasi Praktikum Terbaik</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#core-praktikum">**Core Praktikum**</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#96-pembagian-level-praktikum-yang-direkomendasikan">96. Pembagian Level Praktikum yang Direkomendasikan</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#level-a-wajib">LEVEL A — Wajib</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#level-b-penguatan">LEVEL B — Penguatan</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#level-c-tantangan">LEVEL C — Tantangan</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#97-mengapa-pilihan-ini-direkomendasikan">97. Mengapa Pilihan Ini Direkomendasikan?</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#98-hasil-akhir-yang-diharapkan">98. Hasil Akhir yang Diharapkan</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#99-kesimpulan">99. Kesimpulan</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#ringkasan-script">Ringkasan Script</a><a href="https://darlis-its.github.io/materi-gim-cerdas/#checklist-akhir-sebelum-play">Checklist Akhir Sebelum Play</a></aside><div class="reader"><article class="markdown"><h1 id="modul-praktikum-05">MODUL PRAKTIKUM 05</h1><h1 id="finite-state-machine-fsm">FINITE STATE MACHINE (FSM)</h1><h2 id="enemy-ai-patrol-chase-attack-flee">Enemy AI: Patrol → Chase → Attack → Flee</h2><p><strong>Mata Kuliah:</strong> Game Cerdas<br><strong>Program Studi:</strong> S1 Teknik Informatika<br><strong>Tools:</strong> Unity 6 + C#<br><strong>Materi:</strong> Finite State Machine<br><strong>Prasyarat:</strong> Perception, Movement/Steering, Pathfinding &amp; Navigation</p>
+<hr>
+<h1 id="1-tujuan-praktikum">1. Tujuan Praktikum</h1><p>Pada praktikum ini mahasiswa akan membuat sebuah NPC enemy yang mampu mengambil keputusan menggunakan <strong>Finite State Machine (FSM)</strong>.</p>
+<p>Enemy memiliki empat perilaku utama:</p>
+<pre><code class="hljs language-plaintext">Patrol
+   ↓
+Chase
+   ↓
+Attack
+   ↓
+Flee</code></pre><p>serta satu state tambahan:</p>
+<pre><code class="hljs language-plaintext">Dead</code></pre><p>Perilaku yang akan dibuat:</p>
+<ol>
+<li>Enemy melakukan patroli di antara beberapa waypoint.</li>
+<li>Enemy mendeteksi player menggunakan jarak, field of view, dan line of sight.</li>
+<li>Jika player terlihat, enemy berpindah dari <strong>Patrol</strong> ke <strong>Chase</strong>.</li>
+<li>Enemy mengejar player menggunakan <code>NavMeshAgent</code>.</li>
+<li>Jika player berada dalam jarak serang, enemy berpindah ke <strong>Attack</strong>.</li>
+<li>Enemy menyerang menggunakan damage dan attack cooldown.</li>
+<li>Jika health enemy turun melewati batas tertentu, enemy masuk ke <strong>Flee</strong>.</li>
+<li>Enemy menuju safe point ketika kabur.</li>
+<li>Jika enemy sudah cukup aman, enemy kembali melakukan patrol.</li>
+<li>Jika health mencapai 0, enemy masuk ke <strong>Dead</strong>.</li>
+</ol>
+<hr>
+<h1 id="2-capaian-pembelajaran-praktikum">2. Capaian Pembelajaran Praktikum</h1><p>Setelah menyelesaikan praktikum, mahasiswa diharapkan mampu:</p>
+<ul>
+<li>memahami konsep <strong>State</strong>;</li>
+<li>memahami <strong>Transition</strong>;</li>
+<li>memahami <strong>Condition</strong>;</li>
+<li>membuat state menggunakan <code>enum</code>;</li>
+<li>membuat fungsi <code>ChangeState()</code>;</li>
+<li>memahami konsep <code>EnterState()</code>, <code>UpdateState()</code>, dan <code>ExitState()</code>;</li>
+<li>menerapkan priority transition;</li>
+<li>menggunakan <code>NavMeshAgent</code>;</li>
+<li>menggunakan waypoint;</li>
+<li>menggunakan <code>Physics.Raycast</code>;</li>
+<li>menggunakan <code>LayerMask</code>;</li>
+<li>menggunakan <code>SerializeField</code>;</li>
+<li>menerapkan Field of View sederhana;</li>
+<li>membuat sistem health;</li>
+<li>membuat attack cooldown;</li>
+<li>memahami hysteresis sederhana;</li>
+<li>melakukan debugging FSM menggunakan Console dan Gizmos;</li>
+<li>menghubungkan decision making dengan perception dan navigation.</li>
+</ul>
+<hr>
+<h1 id="3-gambaran-sistem">3. Gambaran Sistem</h1><p>Arsitektur AI yang dibuat:</p>
+<pre><code class="hljs language-plaintext">              PLAYER
+                 │
+                 ▼
+         EnemyPerception
+       distance + FOV + LOS
+                 │
+                 ▼
+             EnemyFSM
+                 │
+        ┌────────┼─────────┐
+        ▼        ▼         ▼
+     Patrol    Chase     Attack
+        │        │         │
+        └────────┴────┬────┘
+                     │
+                HP Rendah
+                     ▼
+                    Flee
+
+              HP &lt;= 0
+                  │
+                  ▼
+                 Dead</code></pre><p>Hubungannya dengan materi sebelumnya:</p>
+<pre><code class="hljs language-plaintext">Perception
+    ↓
+Enemy dapat melihat player?
+    ↓
+FSM / Decision Making
+    ↓
+State = Chase
+    ↓
+NavMeshAgent
+    ↓
+Pathfinding / Navigation
+    ↓
+Enemy bergerak mengejar player</code></pre><p>Dengan demikian FSM <strong>tidak menggantikan NavMesh</strong>.</p>
+<p>FSM menentukan:</p>
+<blockquote>
+<p>Apa yang harus dilakukan NPC?</p>
+</blockquote>
+<p>Sedangkan NavMesh menentukan:</p>
+<blockquote>
+<p>Bagaimana NPC mencapai tujuan tersebut?</p>
+</blockquote>
+<hr>
+<h1 id="4-rekomendasi-implementasi-praktikum">4. Rekomendasi Implementasi Praktikum</h1><p>Untuk praktikum ini digunakan:</p>
+<pre><code class="hljs language-plaintext">Enum-based FSM
++
+NavMeshAgent
++
+Raycast Perception
++
+Health System
++
+Waypoint Patrol
++
+Safe Point Flee</code></pre><h2 id="mengapa-menggunakan-enum-fsm">Mengapa menggunakan Enum FSM?</h2><p>Contoh:</p>
+<pre><code class="hljs language-plaintext">public enum EnemyState
+{
+    Patrol,
+    Chase,
+    Attack,
+    Flee,
+    Dead
+}</code></pre><p>Pendekatan ini dipilih karena:</p>
+<ul>
+<li>struktur state terlihat jelas;</li>
+<li>mahasiswa mudah memahami hubungan state dan transition;</li>
+<li>kode belum terlalu abstrak;</li>
+<li>mudah diperiksa;</li>
+<li>mudah di-debug;</li>
+<li>jumlah state masih sedikit;</li>
+<li>sangat cocok sebagai pengantar FSM.</li>
+</ul>
+<p>Untuk proyek yang lebih besar dapat dikembangkan menjadi:</p>
+<pre><code class="hljs language-plaintext">Class-based FSM
+Hierarchical FSM
+Behavior Tree
+Utility AI</code></pre><p>tetapi belum diperlukan sebagai implementasi utama praktikum ini.</p>
+<hr>
+<h1 id="5-rekomendasi-nama-project">5. Rekomendasi Nama Project</h1><p>Nama project yang disarankan:</p>
+<pre><code class="hljs language-plaintext">GameCerdas_Praktikum05_EnemyFSM</code></pre><p>Alternatif:</p>
+<pre><code class="hljs language-plaintext">Praktikum05_FSMEnemyAI</code></pre><p>atau:</p>
+<pre><code class="hljs language-plaintext">GC05_EnemyFSM</code></pre><p><strong>Rekomendasi utama:</strong></p>
+<pre><code class="hljs language-plaintext">GameCerdas_Praktikum05_EnemyFSM</code></pre><p>Nama tersebut jelas menunjukkan:</p>
+<ul>
+<li>mata kuliah;</li>
+<li>nomor praktikum;</li>
+<li>konsep utama;</li>
+<li>objek implementasi.</li>
+</ul>
+<hr>
+<h1 id="6-struktur-folder-project">6. Struktur Folder Project</h1><p>Di dalam folder <code>Assets</code>, buat struktur:</p>
+<pre><code class="hljs language-plaintext">Assets/
+│
+├── Materials/
+│
+├── Scenes/
+│   └── Praktikum05_FSM.unity
+│
+├── Scripts/
+│   ├── EnemyFSM.cs
+│   ├── EnemyPerception.cs
+│   ├── EnemyHealth.cs
+│   ├── PlayerHealth.cs
+│   ├── SimplePlayerController.cs
+│   └── PlayerAttackTest.cs
+│
+└── Prefabs/</code></pre><p>Keuntungan struktur folder:</p>
+<ul>
+<li>script tidak bercampur dengan material;</li>
+<li>scene mudah ditemukan;</li>
+<li>project lebih rapi;</li>
+<li>mahasiswa terbiasa dengan organisasi project.</li>
+</ul>
+<hr>
+<h1 id="7-persiapan-project-unity">7. Persiapan Project Unity</h1><h2 id="langkah-1-membuat-project">Langkah 1 — Membuat Project</h2><p>Buka:</p>
+<pre><code class="hljs language-plaintext">Unity Hub
+→ New Project</code></pre><p>Pilih template 3D.</p>
+<p>Beri nama:</p>
+<pre><code class="hljs language-plaintext">GameCerdas_Praktikum05_EnemyFSM</code></pre><p>Kemudian buat project.</p>
+<hr>
+<h1 id="8-memasang-ai-navigation">8. Memasang AI Navigation</h1><p>Praktikum menggunakan NavMesh.</p>
+<p>Buka:</p>
+<pre><code class="hljs language-plaintext">Window
+→ Package Manager</code></pre><p>Cari:</p>
+<pre><code class="hljs language-plaintext">AI Navigation</code></pre><p>kemudian install jika belum tersedia.</p>
+<p>AI Navigation menyediakan komponen untuk membuat NavMesh yang digunakan NPC dalam melakukan navigation.</p>
+<hr>
+<h1 id="9-apa-itu-navmesh">9. Apa Itu NavMesh?</h1><p><strong>Navigation Mesh</strong>, atau <strong>NavMesh</strong>, adalah representasi area dalam game yang dapat dilalui NPC.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">+----------------------------------+
+|                                  |
+|      area yang dapat dilalui     |
+|                                  |
+|       █████ obstacle █████       |
+|                                  |
+|                                  |
++----------------------------------+</code></pre><p>NPC tidak perlu menentukan gerakan satu per satu.</p>
+<p>Sebaliknya:</p>
+<pre><code class="hljs language-plaintext">agent.SetDestination(target.position);</code></pre><p>NPC akan meminta sistem navigation mencari jalur menuju target.</p>
+<hr>
+<h1 id="10-apa-itu-navmeshagent">10. Apa Itu NavMeshAgent?</h1><p><code>NavMeshAgent</code> adalah komponen Unity yang membuat sebuah GameObject dapat bergerak di atas NavMesh.</p>
+<p>Pada praktikum:</p>
+<pre><code class="hljs language-plaintext">Enemy
+└── NavMeshAgent</code></pre><p>FSM akan memberikan perintah kepada <code>NavMeshAgent</code>.</p>
+<p>Contoh:</p>
+<h3 id="patrol">Patrol</h3><pre><code class="hljs language-plaintext">agent.SetDestination(waypoint.position);</code></pre><h3 id="chase">Chase</h3><pre><code class="hljs language-plaintext">agent.SetDestination(player.position);</code></pre><h3 id="attack">Attack</h3><pre><code class="hljs language-plaintext">agent.isStopped = true;</code></pre><h3 id="flee">Flee</h3><pre><code class="hljs language-plaintext">agent.SetDestination(safePoint.position);</code></pre><p><code>SetDestination()</code> digunakan untuk mengatur atau memperbarui tujuan agent.</p>
+<hr>
+<h1 id="11-membuat-scene">11. Membuat Scene</h1><p>Buat scene:</p>
+<pre><code class="hljs language-plaintext">Assets
+→ Scenes
+→ Praktikum05_FSM</code></pre><p>Struktur Hierarchy akhirnya kurang lebih:</p>
+<pre><code class="hljs language-plaintext">Praktikum05_FSM
+│
+├── Main Camera
+├── Directional Light
+│
+├── Environment
+│   ├── Ground
+│   ├── Obstacle01
+│   ├── Obstacle02
+│   └── Obstacle03
+│
+├── Navigation
+│
+├── Player
+│
+├── Enemy
+│
+├── PatrolPoints
+│   ├── W1
+│   ├── W2
+│   ├── W3
+│   └── W4
+│
+└── SafePoint</code></pre><hr>
+<h1 id="12-membuat-ground">12. Membuat Ground</h1><p>Buat:</p>
+<pre><code class="hljs language-plaintext">GameObject
+→ 3D Object
+→ Plane</code></pre><p>Rename:</p>
+<pre><code class="hljs language-plaintext">Ground</code></pre><p>Contoh Transform:</p>
+<pre><code class="hljs language-plaintext">Position : (0, 0, 0)
+Scale    : (3, 1, 3)</code></pre><p>Plane akan menjadi area utama pergerakan.</p>
+<hr>
+<h1 id="13-membuat-obstacle">13. Membuat Obstacle</h1><p>Buat beberapa Cube.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">Obstacle01
+Obstacle02
+Obstacle03</code></pre><p>Atur posisi secara bebas sehingga membentuk penghalang.</p>
+<p>Contoh layout:</p>
+<pre><code class="hljs language-plaintext">W1 ● ------------------ ● W2
+
+
+         ███████
+         ███████
+
+Player ●           Enemy ●
+
+
+         ███████
+
+W4 ● ------------------ ● W3</code></pre><p>Obstacle akan membuat NavMeshAgent harus mencari jalur mengelilingi objek.</p>
+<hr>
+<h1 id="14-membuat-navmeshsurface">14. Membuat NavMeshSurface</h1><p>Buat Empty GameObject:</p>
+<pre><code class="hljs language-plaintext">GameObject
+→ Create Empty</code></pre><p>Rename:</p>
+<pre><code class="hljs language-plaintext">Navigation</code></pre><p>Kemudian:</p>
+<pre><code class="hljs language-plaintext">Add Component
+→ NavMesh Surface</code></pre><p><code>NavMeshSurface</code> digunakan untuk menentukan area Scene yang akan digunakan untuk membangun NavMesh.</p>
+<p>Pada Inspector:</p>
+<pre><code class="hljs language-plaintext">Navigation
+└── NavMesh Surface</code></pre><p>Klik:</p>
+<pre><code class="hljs language-plaintext">Bake</code></pre><p>atau tombol/build workflow yang tersedia pada versi AI Navigation yang digunakan.</p>
+<p>Setelah NavMesh berhasil dibuat, Scene View akan menampilkan area navigation.</p>
+<hr>
+<h1 id="15-membuat-player">15. Membuat Player</h1><p>Buat:</p>
+<pre><code class="hljs language-plaintext">GameObject
+→ 3D Object
+→ Capsule</code></pre><p>Rename:</p>
+<pre><code class="hljs language-plaintext">Player</code></pre><p>Atur:</p>
+<pre><code class="hljs language-plaintext">Position = (0, 1, 0)</code></pre><p>Buat material, misalnya:</p>
+<pre><code class="hljs language-plaintext">PlayerMaterial</code></pre><p>gunakan warna yang mudah dibedakan.</p>
+<hr>
+<h1 id="16-tag-player">16. Tag Player</h1><p>Pilih Player.</p>
+<p>Pada Inspector:</p>
+<pre><code class="hljs language-plaintext">Tag
+→ Player</code></pre><h2 id="apa-itu-tag">Apa Itu Tag?</h2><p><strong>Tag</strong> adalah label untuk mengidentifikasi jenis GameObject.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">Player
+Enemy
+MainCamera</code></pre><p>Tag biasanya digunakan untuk mengetahui <strong>identitas atau kategori objek</strong>.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">if (other.CompareTag("Player"))
+{
+    ...
+}</code></pre><hr>
+<h1 id="17-tag-dan-layer-tidak-sama">17. Tag dan Layer Tidak Sama</h1><p>Perbedaan penting:</p>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Layer</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mengidentifikasi objek</td>
+<td>Mengelompokkan objek untuk sistem tertentu</td>
+</tr>
+<tr>
+<td>Biasanya satu kategori</td>
+<td>Digunakan oleh Physics/Camera/Raycast</td>
+</tr>
+<tr>
+<td>Contoh: Player</td>
+<td>Contoh: Obstacle</td>
+</tr>
+<tr>
+<td>Dipakai <code>CompareTag()</code></td>
+<td>Dipakai <code>LayerMask</code></td>
+</tr>
+</tbody></table>
+<p>Secara sederhana:</p>
+<pre><code class="hljs language-plaintext">Tag
+→ "Objek ini siapa?"
+
+Layer
+→ "Objek ini termasuk kelompok physics/rendering apa?"</code></pre><hr>
+<h1 id="18-membuat-layer-obstacle">18. Membuat Layer Obstacle</h1><p>Buat Layer:</p>
+<pre><code class="hljs language-plaintext">Obstacle</code></pre><p>Assign ke:</p>
+<pre><code class="hljs language-plaintext">Obstacle01
+Obstacle02
+Obstacle03</code></pre><p>Layer ini akan digunakan oleh perception system.</p>
+<hr>
+<h1 id="19-membuat-player-controller">19. Membuat Player Controller</h1><p>Tambahkan:</p>
+<pre><code class="hljs language-plaintext">Character Controller</code></pre><p>ke Player.</p>
+<h2 id="apa-itu-charactercontroller">Apa Itu CharacterController?</h2><p><code>CharacterController</code> adalah komponen untuk menggerakkan karakter sambil tetap memperoleh collision constraint tanpa harus mengendalikan karakter sebagai Rigidbody penuh. Unity mendokumentasikannya terutama untuk kontrol karakter first-person atau third-person.</p>
+<p>Buat:</p>
+<pre><code class="hljs language-plaintext">Scripts/SimplePlayerController.cs</code></pre><p>Isi:</p>
+<pre><code class="hljs language-plaintext">using UnityEngine;
+
+[RequireComponent(typeof(CharacterController))]
+public class SimplePlayerController : MonoBehaviour
+{
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float gravity = -9.81f;
+
+    private CharacterController controller;
+    private float verticalVelocity;
+
+    private void Awake()
+    {
+        controller = GetComponent&lt;CharacterController&gt;();
+    }
+
+    private void Update()
+    {
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+
+        Vector3 movement =
+            new Vector3(horizontal, 0f, vertical).normalized;
+
+        controller.Move(
+            movement * moveSpeed * Time.deltaTime
+        );
+
+        if (controller.isGrounded &amp;&amp; verticalVelocity &lt; 0f)
+        {
+            verticalVelocity = -2f;
+        }
+
+        verticalVelocity += gravity * Time.deltaTime;
+
+        controller.Move(
+            Vector3.up *
+            verticalVelocity *
+            Time.deltaTime
+        );
+
+        if (movement.sqrMagnitude &gt; 0.01f)
+        {
+            transform.forward = movement;
+        }
+    }
+}</code></pre><p>Attach ke Player.</p>
+<p>Player dapat digerakkan menggunakan:</p>
+<pre><code class="hljs language-plaintext">W A S D</code></pre><p>atau:</p>
+<pre><code class="hljs language-plaintext">Arrow Keys</code></pre><hr>
+<h1 id="20-penjelasan-script-player">20. Penjelasan Script Player</h1><h2 id="requirecomponent">`RequireComponent`</h2><pre><code class="hljs language-plaintext">[RequireComponent(typeof(CharacterController))]</code></pre><p>Memberi tahu Unity bahwa script membutuhkan komponen:</p>
+<pre><code class="hljs language-plaintext">CharacterController</code></pre><p>Jika belum ada, Unity dapat memastikan komponen tersebut tersedia ketika script dipasang.</p>
+<hr>
+<h2 id="serializefield">`SerializeField`</h2><p>Contoh:</p>
+<pre><code class="hljs language-plaintext">[SerializeField] private float moveSpeed = 5f;</code></pre><p>Variabel tetap:</p>
+<pre><code class="hljs language-plaintext">private</code></pre><p>tetapi nilainya dapat diatur melalui Inspector.</p>
+<p>Ini sangat berguna untuk:</p>
+<pre><code class="hljs language-plaintext">parameter tuning</code></pre><p>Mahasiswa tidak perlu mengubah source code hanya untuk mengganti speed.</p>
+<hr>
+<h2 id="timedeltatime">`Time.deltaTime`</h2><p>Contoh:</p>
+<pre><code class="hljs language-plaintext">movement * moveSpeed * Time.deltaTime</code></pre><p><code>Time.deltaTime</code> adalah waktu antara frame sekarang dan frame sebelumnya.</p>
+<p>Digunakan agar kecepatan gerakan tidak secara langsung bergantung pada frame rate.</p>
+<hr>
+<h1 id="21-membuat-patrol-waypoints">21. Membuat Patrol Waypoints</h1><p>Buat Empty GameObject:</p>
+<pre><code class="hljs language-plaintext">PatrolPoints</code></pre><p>Di dalamnya buat:</p>
+<pre><code class="hljs language-plaintext">W1
+W2
+W3
+W4</code></pre><p>Setiap waypoint dibuat menggunakan:</p>
+<pre><code class="hljs language-plaintext">Create Empty</code></pre><p>Contoh:</p>
+<pre><code class="hljs language-plaintext">PatrolPoints
+├── W1
+├── W2
+├── W3
+└── W4</code></pre><p>Posisikan membentuk rute.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">W1 ● ---------------- ● W2
+ |                       |
+ |                       |
+ |                       |
+W4 ● ---------------- ● W3</code></pre><hr>
+<h1 id="22-apa-itu-waypoint">22. Apa Itu Waypoint?</h1><p>Waypoint adalah sebuah titik referensi posisi.</p>
+<p>Pada Unity biasanya berupa:</p>
+<pre><code class="hljs language-plaintext">Empty GameObject</code></pre><p>Karena setiap GameObject mempunyai:</p>
+<pre><code class="hljs language-plaintext">Transform</code></pre><p>maka waypoint dapat menyediakan posisi:</p>
+<pre><code class="hljs language-plaintext">waypoint.position</code></pre><p>Enemy dapat bergerak:</p>
+<pre><code class="hljs language-plaintext">W1
+ ↓
+W2
+ ↓
+W3
+ ↓
+W4
+ ↓
+W1</code></pre><hr>
+<h1 id="23-membuat-enemy">23. Membuat Enemy</h1><p>Buat:</p>
+<pre><code class="hljs language-plaintext">GameObject
+→ 3D Object
+→ Capsule</code></pre><p>Rename:</p>
+<pre><code class="hljs language-plaintext">Enemy</code></pre><p>Atur:</p>
+<pre><code class="hljs language-plaintext">Position = (8, 1, 5)</code></pre><p>Berikan material berbeda dari Player.</p>
+<hr>
+<h1 id="24-menambahkan-navmeshagent">24. Menambahkan NavMeshAgent</h1><p>Pilih Enemy.</p>
+<p>Tambahkan:</p>
+<pre><code class="hljs language-plaintext">Add Component
+→ Nav Mesh Agent</code></pre><p>Parameter awal yang dapat digunakan:</p>
+<pre><code class="hljs language-plaintext">Speed             = 2
+Angular Speed     = 360
+Acceleration      = 8
+Stopping Distance = 0</code></pre><p>Nilai speed nantinya akan dikontrol FSM.</p>
+<hr>
+<h1 id="25-membuat-perception-system">25. Membuat Perception System</h1><p>Buat:</p>
+<pre><code class="hljs language-plaintext">EnemyPerception.cs</code></pre><p>Isi:</p>
+<pre><code class="hljs language-plaintext">using UnityEngine;
+
+public class EnemyPerception : MonoBehaviour
+{
+    [Header("Target")]
+    [SerializeField] private Transform player;
+
+    [Header("Vision")]
+    [SerializeField] private float visionRange = 10f;
+    [SerializeField, Range(0f, 360f)]
+    private float visionAngle = 90f;
+
+    [SerializeField] private float eyeHeight = 1f;
+
+    [Header("Layer")]
+    [SerializeField] private LayerMask obstacleMask;
+
+    public bool CanSeePlayer { get; private set; }
+
+    public float DistanceToPlayer
+    {
+        get
+        {
+            if (player == null)
+                return Mathf.Infinity;
+
+            return Vector3.Distance(
+                transform.position,
+                player.position
+            );
+        }
+    }
+
+    private void Update()
+    {
+        CanSeePlayer = CheckPlayerVisibility();
+    }
+
+    private bool CheckPlayerVisibility()
+    {
+        if (player == null)
+            return false;
+
+        Vector3 origin =
+            transform.position +
+            Vector3.up * eyeHeight;
+
+        Vector3 target =
+            player.position +
+            Vector3.up * 0.8f;
+
+        Vector3 direction =
+            target - origin;
+
+        float distance = direction.magnitude;
+
+        // 1. Periksa jarak
+        if (distance &gt; visionRange)
+            return false;
+
+        // 2. Periksa sudut pandang
+        float angle = Vector3.Angle(
+            transform.forward,
+            direction
+        );
+
+        if (angle &gt; visionAngle * 0.5f)
+            return false;
+
+        // 3. Periksa obstacle
+        bool blocked = Physics.Raycast(
+            origin,
+            direction.normalized,
+            distance,
+            obstacleMask
+        );
+
+        if (blocked)
+            return false;
+
+        return true;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+
+        Gizmos.DrawWireSphere(
+            transform.position,
+            visionRange
+        );
+
+        Vector3 leftDirection =
+            Quaternion.Euler(
+                0f,
+                -visionAngle * 0.5f,
+                0f
+            ) * transform.forward;
+
+        Vector3 rightDirection =
+            Quaternion.Euler(
+                0f,
+                visionAngle * 0.5f,
+                0f
+            ) * transform.forward;
+
+        Gizmos.DrawRay(
+            transform.position,
+            leftDirection * visionRange
+        );
+
+        Gizmos.DrawRay(
+            transform.position,
+            rightDirection * visionRange
+        );
+    }
+}</code></pre><p>Attach script ke Enemy.</p>
+<hr>
+<h1 id="26-cara-kerja-perception">26. Cara Kerja Perception</h1><p>Enemy tidak langsung dianggap melihat Player hanya karena dekat.</p>
+<p>Tiga condition diperiksa:</p>
+<pre><code class="hljs language-plaintext">1. Distance
+2. Field of View
+3. Line of Sight</code></pre><p>Alurnya:</p>
+<pre><code class="hljs language-plaintext">Player dalam visionRange?
+        │
+       Yes
+        ▼
+Player berada dalam visionAngle?
+        │
+       Yes
+        ▼
+Ada obstacle?
+      /   \
+    Yes    No
+     │      │
+ Tidak    Terlihat
+ terlihat</code></pre><hr>
+<h1 id="27-apa-itu-physicsraycast">27. Apa Itu Physics.Raycast?</h1><p>Raycast dapat dibayangkan sebagai sebuah garis virtual yang ditembakkan dari suatu posisi ke arah tertentu.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">Enemy ● ----------------------&gt; Player</code></pre><p>Jika ada tembok:</p>
+<pre><code class="hljs language-plaintext">Enemy ● -------- █ -------- Player
+                 ↑
+             obstacle</code></pre><p>maka Enemy tidak dapat melihat Player.</p>
+<p>Unity menyediakan <code>Physics.Raycast</code> untuk melakukan query tersebut, dan raycast dapat difilter menggunakan LayerMask.</p>
+<hr>
+<h1 id="28-apa-itu-layermask">28. Apa Itu LayerMask?</h1><p><code>LayerMask</code> menentukan layer mana yang diperiksa oleh fungsi physics.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">[SerializeField]
+private LayerMask obstacleMask;</code></pre><p>Inspector:</p>
+<pre><code class="hljs language-plaintext">Obstacle Mask
+☑ Obstacle</code></pre><p>Artinya Raycast hanya memperhatikan object pada layer yang dipilih.</p>
+<p>Ini lebih baik daripada memperlakukan semua collider sebagai obstacle.</p>
+<hr>
+<h1 id="29-setting-enemyperception">29. Setting EnemyPerception</h1><p>Pada Inspector Enemy:</p>
+<pre><code class="hljs language-plaintext">Enemy Perception</code></pre><p>Isi:</p>
+<pre><code class="hljs language-plaintext">Player        = Player
+Vision Range  = 10
+Vision Angle  = 90
+Eye Height    = 1
+Obstacle Mask = Obstacle</code></pre><hr>
+<h1 id="30-membuat-enemy-health">30. Membuat Enemy Health</h1><p>Buat:</p>
+<pre><code class="hljs language-plaintext">EnemyHealth.cs</code></pre><p>Isi:</p>
+<pre><code class="hljs language-plaintext">using UnityEngine;
+
+public class EnemyHealth : MonoBehaviour
+{
+    [SerializeField] private float maxHealth = 100f;
+
+    public float CurrentHealth { get; private set; }
+
+    public float MaxHealth =&gt; maxHealth;
+
+    public bool IsDead =&gt;
+        CurrentHealth &lt;= 0f;
+
+    private void Awake()
+    {
+        CurrentHealth = maxHealth;
+    }
+
+    public void TakeDamage(float damage)
+    {
+        if (IsDead)
+            return;
+
+        CurrentHealth -= damage;
+
+        CurrentHealth = Mathf.Clamp(
+            CurrentHealth,
+            0f,
+            maxHealth
+        );
+
+        Debug.Log(
+            "Enemy HP: " + CurrentHealth
+        );
+    }
+}</code></pre><p>Attach ke Enemy.</p>
+<hr>
+<h1 id="31-membuat-player-health">31. Membuat Player Health</h1><p>Buat:</p>
+<pre><code class="hljs language-plaintext">PlayerHealth.cs</code></pre><p>Isi:</p>
+<pre><code class="hljs language-plaintext">using UnityEngine;
+
+public class PlayerHealth : MonoBehaviour
+{
+    [SerializeField] private float maxHealth = 100f;
+
+    public float CurrentHealth { get; private set; }
+
+    private void Awake()
+    {
+        CurrentHealth = maxHealth;
+    }
+
+    public void TakeDamage(float damage)
+    {
+        CurrentHealth -= damage;
+
+        CurrentHealth = Mathf.Clamp(
+            CurrentHealth,
+            0f,
+            maxHealth
+        );
+
+        Debug.Log(
+            "Player HP: " + CurrentHealth
+        );
+
+        if (CurrentHealth &lt;= 0f)
+        {
+            Debug.Log("Player Dead");
+        }
+    }
+}</code></pre><p>Attach ke Player.</p>
+<hr>
+<h1 id="32-membuat-safe-point">32. Membuat Safe Point</h1><p>Buat:</p>
+<pre><code class="hljs language-plaintext">Create Empty</code></pre><p>Rename:</p>
+<pre><code class="hljs language-plaintext">SafePoint</code></pre><p>Letakkan di area yang cukup jauh dari Player.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">Player ●
+
+
+         █ obstacle
+
+
+Enemy ● ---------------- SafePoint ●</code></pre><p>SafePoint harus berada di area yang dapat dicapai oleh NavMeshAgent.</p>
+<hr>
+<h1 id="33-state-fsm">33. State FSM</h1><p>Sekarang kita membuat inti praktikum.</p>
+<p>FSM memiliki:</p>
+<pre><code class="hljs language-plaintext">Patrol
+Chase
+Attack
+Flee
+Dead</code></pre><p>Transition utama:</p>
+<pre><code class="hljs language-plaintext">Patrol
+  │ melihat Player
+  ▼
+Chase
+  │ Player cukup dekat
+  ▼
+Attack
+
+Patrol / Chase / Attack
+        │
+        │ HP rendah
+        ▼
+       Flee
+
+Flee
+  │ sudah aman
+  ▼
+Patrol</code></pre><p>Global transition:</p>
+<pre><code class="hljs language-plaintext">ANY STATE
+    │
+ HP &lt;= 0
+    ▼
+   Dead</code></pre><hr>
+<h1 id="34-membuat-enemyfsm">34. Membuat EnemyFSM</h1><p>Buat:</p>
+<pre><code class="hljs language-plaintext">EnemyFSM.cs</code></pre><p>Isi script berikut.</p>
+<pre><code class="hljs language-plaintext">using UnityEngine;
+using UnityEngine.AI;
+
+public class EnemyFSM : MonoBehaviour
+{
+    public enum EnemyState
+    {
+        Patrol,
+        Chase,
+        Attack,
+        Flee,
+        Dead
+    }
+
+    [Header("References")]
+    [SerializeField] private Transform player;
+    [SerializeField] private NavMeshAgent agent;
+    [SerializeField] private EnemyPerception perception;
+    [SerializeField] private EnemyHealth health;
+
+    [Header("Patrol")]
+    [SerializeField] private Transform[] patrolPoints;
+    [SerializeField] private float patrolSpeed = 2f;
+    [SerializeField] private float waypointTolerance = 0.5f;
+
+    [Header("Chase")]
+    [SerializeField] private float chaseSpeed = 4f;
+    [SerializeField] private float lostPlayerDelay = 2f;
+
+    [Header("Attack")]
+    [SerializeField] private float attackRange = 2f;
+    [SerializeField] private float attackExitRange = 2.75f;
+    [SerializeField] private float attackDamage = 10f;
+    [SerializeField] private float attackCooldown = 1.5f;
+
+    [Header("Flee")]
+    [SerializeField] private Transform safePoint;
+    [SerializeField] private float fleeSpeed = 5f;
+    [SerializeField] private float lowHealthThreshold = 30f;
+    [SerializeField] private float safeDistance = 12f;
+
+    [Header("Debug")]
+    [SerializeField] private EnemyState currentState;
+
+    private int currentPatrolIndex = 0;
+
+    private float lostPlayerTimer = 0f;
+    private float nextAttackTime = 0f;
+
+    private bool fleeTriggered = false;
+
+    private PlayerHealth playerHealth;
+
+    public EnemyState CurrentState =&gt; currentState;
+
+    private void Awake()
+    {
+        if (agent == null)
+            agent = GetComponent&lt;NavMeshAgent&gt;();
+
+        if (perception == null)
+            perception = GetComponent&lt;EnemyPerception&gt;();
+
+        if (health == null)
+            health = GetComponent&lt;EnemyHealth&gt;();
+
+        if (player != null)
+            playerHealth = player.GetComponent&lt;PlayerHealth&gt;();
+    }
+
+    private void Start()
+    {
+        ChangeState(EnemyState.Patrol);
+    }
+
+    private void Update()
+    {
+        // ================================
+        // GLOBAL TRANSITION PRIORITY
+        // ================================
+
+        if (health.IsDead)
+        {
+            ChangeState(EnemyState.Dead);
+            return;
+        }
+
+        if (!fleeTriggered &amp;&amp;
+            health.CurrentHealth &lt;= lowHealthThreshold &amp;&amp;
+            currentState != EnemyState.Flee)
+        {
+            fleeTriggered = true;
+            ChangeState(EnemyState.Flee);
+        }
+
+        // ================================
+        // UPDATE CURRENT STATE
+        // ================================
+
+        switch (currentState)
+        {
+            case EnemyState.Patrol:
+                UpdatePatrol();
+                break;
+
+            case EnemyState.Chase:
+                UpdateChase();
+                break;
+
+            case EnemyState.Attack:
+                UpdateAttack();
+                break;
+
+            case EnemyState.Flee:
+                UpdateFlee();
+                break;
+
+            case EnemyState.Dead:
+                UpdateDead();
+                break;
+        }
+    }
+
+    // =====================================
+    // CHANGE STATE
+    // =====================================
+
+    private void ChangeState(EnemyState newState)
+    {
+        if (currentState == newState)
+            return;
+
+        ExitState(currentState);
+
+        currentState = newState;
+
+        Debug.Log(
+            gameObject.name +
+            " → State: " +
+            currentState
+        );
+
+        EnterState(currentState);
+    }
+
+    // =====================================
+    // ENTER STATE
+    // =====================================
+
+    private void EnterState(EnemyState state)
+    {
+        switch (state)
+        {
+            case EnemyState.Patrol:
+
+                agent.isStopped = false;
+                agent.speed = patrolSpeed;
+
+                SetPatrolDestination();
+
+                break;
+
+            case EnemyState.Chase:
+
+                agent.isStopped = false;
+                agent.speed = chaseSpeed;
+
+                lostPlayerTimer = 0f;
+
+                break;
+
+            case EnemyState.Attack:
+
+                agent.isStopped = true;
+                agent.ResetPath();
+
+                break;
+
+            case EnemyState.Flee:
+
+                agent.isStopped = false;
+                agent.speed = fleeSpeed;
+
+                if (safePoint != null)
+                {
+                    agent.SetDestination(
+                        safePoint.position
+                    );
+                }
+
+                break;
+
+            case EnemyState.Dead:
+
+                agent.isStopped = true;
+                agent.ResetPath();
+
+                break;
+        }
+    }
+
+    // =====================================
+    // EXIT STATE
+    // =====================================
+
+    private void ExitState(EnemyState state)
+    {
+        switch (state)
+        {
+            case EnemyState.Attack:
+                agent.isStopped = false;
+                break;
+        }
+    }
+
+    // =====================================
+    // PATROL
+    // =====================================
+
+    private void UpdatePatrol()
+    {
+        if (perception.CanSeePlayer)
+        {
+            ChangeState(EnemyState.Chase);
+            return;
+        }
+
+        if (patrolPoints == null ||
+            patrolPoints.Length == 0)
+            return;
+
+        if (!agent.pathPending &amp;&amp;
+            agent.remainingDistance &lt;=
+            waypointTolerance)
+        {
+            currentPatrolIndex++;
+
+            if (currentPatrolIndex &gt;=
+                patrolPoints.Length)
+            {
+                currentPatrolIndex = 0;
+            }
+
+            SetPatrolDestination();
+        }
+    }
+
+    private void SetPatrolDestination()
+    {
+        if (patrolPoints == null ||
+            patrolPoints.Length == 0)
+            return;
+
+        Transform point =
+            patrolPoints[currentPatrolIndex];
+
+        if (point != null)
+        {
+            agent.SetDestination(
+                point.position
+            );
+        }
+    }
+
+    // =====================================
+    // CHASE
+    // =====================================
+
+    private void UpdateChase()
+    {
+        float distance =
+            Vector3.Distance(
+                transform.position,
+                player.position
+            );
+
+        if (perception.CanSeePlayer)
+        {
+            lostPlayerTimer = 0f;
+
+            agent.SetDestination(
+                player.position
+            );
+
+            if (distance &lt;= attackRange)
+            {
+                ChangeState(
+                    EnemyState.Attack
+                );
+
+                return;
+            }
+        }
+        else
+        {
+            lostPlayerTimer +=
+                Time.deltaTime;
+
+            if (lostPlayerTimer &gt;=
+                lostPlayerDelay)
+            {
+                ChangeState(
+                    EnemyState.Patrol
+                );
+
+                return;
+            }
+        }
+    }
+
+    // =====================================
+    // ATTACK
+    // =====================================
+
+    private void UpdateAttack()
+    {
+        float distance =
+            Vector3.Distance(
+                transform.position,
+                player.position
+            );
+
+        FacePlayer();
+
+        if (!perception.CanSeePlayer ||
+            distance &gt; attackExitRange)
+        {
+            ChangeState(
+                EnemyState.Chase
+            );
+
+            return;
+        }
+
+        if (Time.time &gt;= nextAttackTime)
+        {
+            AttackPlayer();
+
+            nextAttackTime =
+                Time.time +
+                attackCooldown;
+        }
+    }
+
+    private void AttackPlayer()
+    {
+        Debug.Log("Enemy attacks Player!");
+
+        if (playerHealth != null)
+        {
+            playerHealth.TakeDamage(
+                attackDamage
+            );
+        }
+    }
+
+    private void FacePlayer()
+    {
+        Vector3 direction =
+            player.position -
+            transform.position;
+
+        direction.y = 0f;
+
+        if (direction.sqrMagnitude &lt;= 0.001f)
+            return;
+
+        Quaternion targetRotation =
+            Quaternion.LookRotation(
+                direction
+            );
+
+        transform.rotation =
+            Quaternion.Slerp(
+                transform.rotation,
+                targetRotation,
+                10f * Time.deltaTime
+            );
+    }
+
+    // =====================================
+    // FLEE
+    // =====================================
+
+    private void UpdateFlee()
+    {
+        if (safePoint == null)
+            return;
+
+        float playerDistance =
+            Vector3.Distance(
+                transform.position,
+                player.position
+            );
+
+        float safePointDistance =
+            Vector3.Distance(
+                transform.position,
+                safePoint.position
+            );
+
+        if (playerDistance &gt;= safeDistance ||
+            safePointDistance &lt;= 1f)
+        {
+            ChangeState(
+                EnemyState.Patrol
+            );
+
+            return;
+        }
+    }
+
+    // =====================================
+    // DEAD
+    // =====================================
+
+    private void UpdateDead()
+    {
+        // Tidak melakukan action.
+    }
+
+    // =====================================
+    // DEBUG GIZMOS
+    // =====================================
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+
+        Gizmos.DrawWireSphere(
+            transform.position,
+            attackRange
+        );
+
+        Gizmos.color = Color.magenta;
+
+        Gizmos.DrawWireSphere(
+            transform.position,
+            attackExitRange
+        );
+    }
+}</code></pre><hr>
+<h1 id="35-memahami-enum">35. Memahami Enum</h1><p>Bagian:</p>
+<pre><code class="hljs language-plaintext">public enum EnemyState
+{
+    Patrol,
+    Chase,
+    Attack,
+    Flee,
+    Dead
+}</code></pre><p><code>enum</code> digunakan untuk mendefinisikan sekumpulan pilihan nilai yang terbatas.</p>
+<p>Daripada menggunakan:</p>
+<pre><code class="hljs language-plaintext">0 = Patrol
+1 = Chase
+2 = Attack
+3 = Flee</code></pre><p>kita menggunakan:</p>
+<pre><code class="hljs language-plaintext">EnemyState.Patrol
+EnemyState.Chase
+EnemyState.Attack
+EnemyState.Flee</code></pre><p>Kode menjadi jauh lebih mudah dibaca.</p>
+<hr>
+<h1 id="36-currentstate">36. currentState</h1><p>Variabel:</p>
+<pre><code class="hljs language-plaintext">private EnemyState currentState;</code></pre><p>menyimpan state yang sedang aktif.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">currentState = Chase</code></pre><p>berarti:</p>
+<pre><code class="hljs language-plaintext">Enemy sedang menjalankan perilaku Chase.</code></pre><p>Pada satu waktu hanya satu state utama yang aktif.</p>
+<hr>
+<h1 id="37-fungsi-changestate">37. Fungsi ChangeState()</h1><p>Bagian paling penting:</p>
+<pre><code class="hljs language-plaintext">private void ChangeState(EnemyState newState)</code></pre><p>Alurnya:</p>
+<pre><code class="hljs language-plaintext">State lama
+   ↓
+ExitState()
+   ↓
+currentState = state baru
+   ↓
+EnterState()</code></pre><p>Contoh:</p>
+<pre><code class="hljs language-plaintext">Patrol
+   │
+player terlihat
+   ▼
+ExitState(Patrol)
+   ↓
+currentState = Chase
+   ↓
+EnterState(Chase)</code></pre><p>Keuntungan menggunakan fungsi khusus ini adalah semua perubahan state melalui satu jalur yang terkontrol.</p>
+<hr>
+<h1 id="38-enterstate">38. EnterState()</h1><p><code>EnterState()</code> hanya dijalankan ketika NPC <strong>baru memasuki state</strong>.</p>
+<p>Contoh Chase:</p>
+<pre><code class="hljs language-plaintext">agent.speed = chaseSpeed;</code></pre><p>Tidak perlu mengatur speed tersebut setiap frame.</p>
+<p>Contoh Attack:</p>
+<pre><code class="hljs language-plaintext">agent.isStopped = true;</code></pre><p>Enemy berhenti ketika mulai menyerang.</p>
+<hr>
+<h1 id="39-update-state">39. Update State</h1><p>Berbeda dengan <code>EnterState()</code>:</p>
+<pre><code class="hljs language-plaintext">EnterState
+→ sekali saat masuk</code></pre><p>sementara:</p>
+<pre><code class="hljs language-plaintext">UpdatePatrol()
+UpdateChase()
+UpdateAttack()
+UpdateFlee()</code></pre><p>dijalankan setiap frame selama state tersebut aktif.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">State = Chase</code></pre><p>maka:</p>
+<pre><code class="hljs language-plaintext">UpdateChase();</code></pre><p>terus dijalankan.</p>
+<hr>
+<h1 id="40-exitstate">40. ExitState()</h1><p><code>ExitState()</code> dijalankan ketika NPC meninggalkan sebuah state.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">case EnemyState.Attack:
+    agent.isStopped = false;
+    break;</code></pre><p>Artinya setelah keluar dari Attack, NavMeshAgent diperbolehkan bergerak kembali.</p>
+<hr>
+<h1 id="41-state-patrol">41. State Patrol</h1><p>FSM menjalankan:</p>
+<pre><code class="hljs language-plaintext">UpdatePatrol();</code></pre><p>Enemy menuju waypoint.</p>
+<p>Ketika sampai:</p>
+<pre><code class="hljs language-plaintext">W1 → W2
+W2 → W3
+W3 → W4
+W4 → W1</code></pre><p>Transition:</p>
+<pre><code class="hljs language-plaintext">IF CanSeePlayer
+    Patrol → Chase</code></pre><p>kode:</p>
+<pre><code class="hljs language-plaintext">if (perception.CanSeePlayer)
+{
+    ChangeState(EnemyState.Chase);
+}</code></pre><hr>
+<h1 id="42-state-chase">42. State Chase</h1><p>Dalam Chase:</p>
+<pre><code class="hljs language-plaintext">agent.SetDestination(
+    player.position
+);</code></pre><p>Destination selalu diperbarui mengikuti Player.</p>
+<p>Transition:</p>
+<pre><code class="hljs language-plaintext">IF distance &lt;= attackRange
+    Chase → Attack</code></pre><hr>
+<h1 id="43-player-hilang-dan-timer">43. Player Hilang dan Timer</h1><p>Jika Player tidak terlihat:</p>
+<pre><code class="hljs language-plaintext">lostPlayerTimer += Time.deltaTime;</code></pre><p>Enemy tidak langsung kembali ke Patrol.</p>
+<p>Enemy menunggu:</p>
+<pre><code class="hljs language-plaintext">lostPlayerDelay = 2 detik</code></pre><p>Jika selama dua detik Player masih tidak terlihat:</p>
+<pre><code class="hljs language-plaintext">Chase → Patrol</code></pre><p>Ini menerapkan konsep:</p>
+<pre><code class="hljs language-plaintext">Timer-based transition</code></pre><p>yang membantu mencegah perubahan state terlalu cepat.</p>
+<hr>
+<h1 id="44-state-attack">44. State Attack</h1><p>Enemy masuk Attack jika:</p>
+<pre><code class="hljs language-plaintext">distance &lt;= attackRange</code></pre><p>Contoh:</p>
+<pre><code class="hljs language-plaintext">attackRange = 2 meter</code></pre><p>Pada Attack:</p>
+<pre><code class="hljs language-plaintext">Enemy berhenti
+↓
+Enemy menghadap Player
+↓
+Enemy menyerang
+↓
+Menunggu cooldown
+↓
+Menyerang lagi</code></pre><hr>
+<h1 id="45-mengapa-attack-membutuhkan-cooldown">45. Mengapa Attack Membutuhkan Cooldown?</h1><p>Unity menjalankan <code>Update()</code> setiap frame.</p>
+<p>Tanpa cooldown:</p>
+<pre><code class="hljs language-plaintext">60 FPS
+→ Attack dapat terjadi ±60 kali/detik</code></pre><p>Karena itu digunakan:</p>
+<pre><code class="hljs language-plaintext">if (Time.time &gt;= nextAttackTime)</code></pre><p>Setelah menyerang:</p>
+<pre><code class="hljs language-plaintext">nextAttackTime =
+    Time.time + attackCooldown;</code></pre><p>Jika:</p>
+<pre><code class="hljs language-plaintext">attackCooldown = 1.5</code></pre><p>enemy hanya dapat menyerang setiap 1,5 detik.</p>
+<hr>
+<h1 id="46-hysteresis-pada-attack-range">46. Hysteresis pada Attack Range</h1><p>Perhatikan dua parameter:</p>
+<pre><code class="hljs language-plaintext">attackRange     = 2.0
+attackExitRange = 2.75</code></pre><p>Enemy masuk Attack jika:</p>
+<pre><code class="hljs language-plaintext">distance &lt;= 2.0</code></pre><p>tetapi baru keluar Attack jika:</p>
+<pre><code class="hljs language-plaintext">distance &gt; 2.75</code></pre><p>Ini disebut:</p>
+<h1 id="hysteresis">Hysteresis</h1><p>Tanpa hysteresis:</p>
+<pre><code class="hljs language-plaintext">1.99 → Attack
+2.01 → Chase
+1.99 → Attack
+2.01 → Chase</code></pre><p>NPC dapat berganti state sangat cepat.</p>
+<p>Dengan hysteresis:</p>
+<pre><code class="hljs language-plaintext">Masuk Attack = 2.0
+Keluar Attack = 2.75</code></pre><p>tersedia daerah toleransi.</p>
+<hr>
+<h1 id="47-state-flee">47. State Flee</h1><p>Condition:</p>
+<pre><code class="hljs language-plaintext">health.CurrentHealth &lt;=
+lowHealthThreshold</code></pre><p>Misalnya:</p>
+<pre><code class="hljs language-plaintext">Max HP = 100
+Low Health Threshold = 30</code></pre><p>Ketika HP:</p>
+<pre><code class="hljs language-plaintext">30 atau lebih rendah</code></pre><p>maka:</p>
+<pre><code class="hljs language-plaintext">Attack / Chase / Patrol
+          ↓
+         Flee</code></pre><hr>
+<h1 id="48-mengapa-digunakan-fleetriggered">48. Mengapa Digunakan `fleeTriggered`?</h1><p>Ada permasalahan menarik.</p>
+<p>Misalnya:</p>
+<pre><code class="hljs language-plaintext">HP = 20</code></pre><p>Enemy Flee dan setelah aman kembali Patrol.</p>
+<p>Tetapi HP masih:</p>
+<pre><code class="hljs language-plaintext">20</code></pre><p>Jika hanya menggunakan condition:</p>
+<pre><code class="hljs language-plaintext">HP &lt;= 30 → Flee</code></pre><p>maka pada frame berikutnya:</p>
+<pre><code class="hljs language-plaintext">Patrol → Flee</code></pre><p>lagi.</p>
+<p>Karena itu digunakan:</p>
+<pre><code class="hljs language-plaintext">private bool fleeTriggered = false;</code></pre><p>Flee hanya dipicu satu kali dalam skenario praktikum dasar.</p>
+<p>Ini sekaligus menunjukkan kepada mahasiswa bahwa transition FSM perlu mempertimbangkan <strong>state history dan kondisi keluar</strong>.</p>
+<p>Untuk versi lanjutan dapat ditambahkan sistem Heal sehingga <code>fleeTriggered</code> di-reset ketika health pulih.</p>
+<hr>
+<h1 id="49-state-dead">49. State Dead</h1><p>Condition global:</p>
+<pre><code class="hljs language-plaintext">if (health.IsDead)</code></pre><p>akan memiliki prioritas tertinggi.</p>
+<p>Alur:</p>
+<pre><code class="hljs language-plaintext">Patrol ─┐
+Chase  ─┤
+Attack ─┼── HP &lt;= 0 ──→ Dead
+Flee   ─┘</code></pre><p>Ini merupakan contoh:</p>
+<h1 id="global-transition">Global Transition</h1><p>Condition tersebut tidak hanya berlaku pada satu state.</p>
+<hr>
+<h1 id="50-transition-priority">50. Transition Priority</h1><p>Urutan evaluasi sangat penting.</p>
+<p>Pada script:</p>
+<pre><code class="hljs language-plaintext">1. Dead
+2. Flee
+3. State-specific transition</code></pre><p>Contoh:</p>
+<p>Enemy sedang berada dekat Player sekaligus HP = 0.</p>
+<p>Ada dua kemungkinan:</p>
+<pre><code class="hljs language-plaintext">Attack
+Dead</code></pre><p>Tetapi yang seharusnya dipilih:</p>
+<pre><code class="hljs language-plaintext">Dead</code></pre><p>Karena itu:</p>
+<pre><code class="hljs language-plaintext">Dead</code></pre><p>mempunyai prioritas tertinggi.</p>
+<hr>
+<h1 id="51-membuat-test-attack-player">51. Membuat Test Attack Player</h1><p>Kita membutuhkan cara sederhana untuk mengurangi health Enemy sehingga state Flee dapat diuji.</p>
+<p>Buat:</p>
+<pre><code class="hljs language-plaintext">PlayerAttackTest.cs</code></pre><p>Isi:</p>
+<pre><code class="hljs language-plaintext">using UnityEngine;
+
+public class PlayerAttackTest : MonoBehaviour
+{
+    [SerializeField] private EnemyHealth enemy;
+    [SerializeField] private float attackDistance = 3f;
+    [SerializeField] private float damage = 20f;
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TryAttackEnemy();
+        }
+    }
+
+    private void TryAttackEnemy()
+    {
+        if (enemy == null)
+            return;
+
+        float distance =
+            Vector3.Distance(
+                transform.position,
+                enemy.transform.position
+            );
+
+        if (distance &lt;= attackDistance)
+        {
+            enemy.TakeDamage(damage);
+
+            Debug.Log(
+                "Player attacks Enemy!"
+            );
+        }
+    }
+}</code></pre><p>Attach ke Player.</p>
+<p>Atur:</p>
+<pre><code class="hljs language-plaintext">Enemy = Enemy
+Attack Distance = 3
+Damage = 20</code></pre><p>Sekarang:</p>
+<pre><code class="hljs language-plaintext">SPACE</code></pre><p>digunakan sebagai serangan testing.</p>
+<hr>
+<h1 id="52-konfigurasi-enemyfsm-di-inspector">52. Konfigurasi EnemyFSM di Inspector</h1><p>Pilih Enemy.</p>
+<p>Isi:</p>
+<h2 id="references">References</h2><pre><code class="hljs language-plaintext">Player      = Player
+Agent       = Enemy
+Perception  = Enemy
+Health      = Enemy</code></pre><hr>
+<h2 id="patrol">Patrol</h2><pre><code class="hljs language-plaintext">Patrol Points Size = 4
+
+Element 0 = W1
+Element 1 = W2
+Element 2 = W3
+Element 3 = W4
+
+Patrol Speed       = 2
+Waypoint Tolerance = 0.5</code></pre><hr>
+<h2 id="chase">Chase</h2><pre><code class="hljs language-plaintext">Chase Speed      = 4
+Lost Player Delay = 2</code></pre><hr>
+<h2 id="attack">Attack</h2><pre><code class="hljs language-plaintext">Attack Range      = 2
+Attack Exit Range = 2.75
+Attack Damage     = 10
+Attack Cooldown   = 1.5</code></pre><hr>
+<h2 id="flee">Flee</h2><pre><code class="hljs language-plaintext">Safe Point           = SafePoint
+Flee Speed           = 5
+Low Health Threshold = 30
+Safe Distance        = 12</code></pre><hr>
+<h1 id="53-parameter-rekomendasi">53. Parameter Rekomendasi</h1><p>Gunakan nilai awal:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th align="right">Nilai</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Patrol Speed</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>Chase Speed</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td>Flee Speed</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td>Vision Range</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td>Vision Angle</td>
+<td align="right">90°</td>
+</tr>
+<tr>
+<td>Attack Range</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>Attack Exit Range</td>
+<td align="right">2.75</td>
+</tr>
+<tr>
+<td>Attack Damage</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td>Attack Cooldown</td>
+<td align="right">1.5 s</td>
+</tr>
+<tr>
+<td>Max Enemy HP</td>
+<td align="right">100</td>
+</tr>
+<tr>
+<td>Low Health Threshold</td>
+<td align="right">30</td>
+</tr>
+<tr>
+<td>Safe Distance</td>
+<td align="right">12</td>
+</tr>
+<tr>
+<td>Lost Player Delay</td>
+<td align="right">2 s</td>
+</tr>
+</tbody></table>
+<p>Parameter tersebut hanya nilai awal untuk praktikum.</p>
+<p>Mahasiswa dianjurkan melakukan tuning.</p>
+<hr>
+<h1 id="54-cara-pengujian-praktikum">54. Cara Pengujian Praktikum</h1><p>Tekan:</p>
+<pre><code class="hljs language-plaintext">Play</code></pre><hr>
+<h2 id="test-1-patrol">Test 1 — Patrol</h2><p>Jauhkan Player dari Enemy.</p>
+<p>Expected result:</p>
+<pre><code class="hljs language-plaintext">Enemy:
+W1 → W2 → W3 → W4 → W1</code></pre><p>Console:</p>
+<pre><code class="hljs language-plaintext">Enemy → State: Patrol</code></pre><hr>
+<h1 id="55-test-2-detection">55. Test 2 — Detection</h1><p>Gerakkan Player menggunakan:</p>
+<pre><code class="hljs language-plaintext">WASD</code></pre><p>masuk ke vision range Enemy.</p>
+<p>Pastikan:</p>
+<ul>
+<li>Player berada di depan Enemy;</li>
+<li>tidak ada obstacle.</li>
+</ul>
+<p>Expected:</p>
+<pre><code class="hljs language-plaintext">Patrol → Chase</code></pre><p>Console:</p>
+<pre><code class="hljs language-plaintext">Enemy → State: Chase</code></pre><hr>
+<h1 id="56-test-3-field-of-view">56. Test 3 — Field of View</h1><p>Letakkan Player:</p>
+<pre><code class="hljs language-plaintext">di belakang Enemy</code></pre><p>walaupun jaraknya dekat.</p>
+<p>Expected:</p>
+<pre><code class="hljs language-plaintext">Enemy tidak langsung melihat Player</code></pre><p>karena Player berada di luar:</p>
+<pre><code class="hljs language-plaintext">visionAngle</code></pre><hr>
+<h1 id="57-test-4-line-of-sight">57. Test 4 — Line of Sight</h1><p>Letakkan obstacle:</p>
+<pre><code class="hljs language-plaintext">Enemy → Obstacle → Player</code></pre><p>Expected:</p>
+<pre><code class="hljs language-plaintext">Enemy tidak dapat melihat Player</code></pre><p>walaupun Player:</p>
+<ul>
+<li>berada dalam visionRange;</li>
+<li>berada dalam visionAngle.</li>
+</ul>
+<p>Penyebab:</p>
+<pre><code class="hljs language-plaintext">Raycast mengenai Obstacle.</code></pre><hr>
+<h1 id="58-test-5-chase">58. Test 5 — Chase</h1><p>Masuk ke area vision.</p>
+<p>Expected:</p>
+<pre><code class="hljs language-plaintext">Enemy mengejar Player</code></pre><p>Jika Player bergerak melewati obstacle:</p>
+<pre><code class="hljs language-plaintext">NavMeshAgent</code></pre><p>akan mengikuti jalur navigasi yang tersedia.</p>
+<hr>
+<h1 id="59-test-6-attack">59. Test 6 — Attack</h1><p>Biarkan Enemy mendekati Player.</p>
+<p>Ketika:</p>
+<pre><code class="hljs language-plaintext">distance &lt;= attackRange</code></pre><p>expected:</p>
+<pre><code class="hljs language-plaintext">Chase → Attack</code></pre><p>Enemy berhenti dan menyerang Player.</p>
+<p>Console:</p>
+<pre><code class="hljs language-plaintext">Enemy attacks Player!
+Player HP: 90</code></pre><p>kemudian:</p>
+<pre><code class="hljs language-plaintext">Player HP: 80
+Player HP: 70
+...</code></pre><p>sesuai cooldown.</p>
+<hr>
+<h1 id="60-test-7-attack-hysteresis">60. Test 7 — Attack Hysteresis</h1><p>Saat Enemy menyerang, gerakkan Player sedikit.</p>
+<p>Misalnya:</p>
+<pre><code class="hljs language-plaintext">distance = 2.2</code></pre><p>Enemy tidak langsung berpindah ke Chase.</p>
+<p>Enemy baru keluar jika:</p>
+<pre><code class="hljs language-plaintext">distance &gt; 2.75</code></pre><p>Ini menunjukkan hysteresis.</p>
+<hr>
+<h1 id="61-test-8-lost-player-timer">61. Test 8 — Lost Player Timer</h1><p>Biarkan Enemy Chase.</p>
+<p>Kemudian sembunyikan Player di balik obstacle.</p>
+<p>Expected:</p>
+<pre><code class="hljs language-plaintext">Player hilang
+↓
+Enemy tidak langsung Patrol
+↓
+menunggu ±2 detik
+↓
+Chase → Patrol</code></pre><hr>
+<h1 id="62-test-9-flee">62. Test 9 — Flee</h1><p>Dekati Enemy.</p>
+<p>Tekan:</p>
+<pre><code class="hljs language-plaintext">SPACE</code></pre><p>berulang kali.</p>
+<p>Damage:</p>
+<pre><code class="hljs language-plaintext">20</code></pre><p>Contoh:</p>
+<pre><code class="hljs language-plaintext">HP 100
+ ↓
+80
+ ↓
+60
+ ↓
+40
+ ↓
+20</code></pre><p>Ketika:</p>
+<pre><code class="hljs language-plaintext">HP &lt;= 30</code></pre><p>expected:</p>
+<pre><code class="hljs language-plaintext">Attack / Chase
+      ↓
+     Flee</code></pre><p>Enemy menuju:</p>
+<pre><code class="hljs language-plaintext">SafePoint</code></pre><hr>
+<h1 id="63-test-10-dead">63. Test 10 — Dead</h1><p>Terus serang Enemy sampai:</p>
+<pre><code class="hljs language-plaintext">HP = 0</code></pre><p>Expected:</p>
+<pre><code class="hljs language-plaintext">ANY STATE
+   ↓
+Dead</code></pre><p>Enemy berhenti bergerak.</p>
+<hr>
+<h1 id="64-visual-debugging-dengan-gizmos">64. Visual Debugging dengan Gizmos</h1><p>Saat Enemy dipilih di Scene View, script perception menggambar:</p>
+<pre><code class="hljs language-plaintext">Vision Range</code></pre><p>dan arah batas:</p>
+<pre><code class="hljs language-plaintext">Vision Angle</code></pre><p>EnemyFSM juga menggambar:</p>
+<pre><code class="hljs language-plaintext">Attack Range
+Attack Exit Range</code></pre><p>Contoh visual konseptual:</p>
+<pre><code class="hljs language-plaintext">          Vision Range
+        /              \
+       /                \
+      /                  \
+     ● Enemy
+
+       ○ Attack Range
+       ◯ Attack Exit Range</code></pre><hr>
+<h1 id="65-apa-itu-gizmos">65. Apa Itu Gizmos?</h1><p><strong>Gizmos</strong> adalah visual debugging yang ditampilkan di Unity Scene View.</p>
+<p>Gizmos:</p>
+<ul>
+<li>tidak menjadi object gameplay;</li>
+<li>membantu developer memahami parameter;</li>
+<li>sangat cocok untuk AI;</li>
+<li>dapat menunjukkan radius dan arah.</li>
+</ul>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">Gizmos.DrawWireSphere(
+    transform.position,
+    attackRange
+);</code></pre><hr>
+<h1 id="66-debugging-fsm">66. Debugging FSM</h1><p>State aktif juga muncul di Inspector:</p>
+<pre><code class="hljs language-plaintext">Current State</code></pre><p>dan Console:</p>
+<pre><code class="hljs language-plaintext">Enemy → State: Patrol
+Enemy → State: Chase
+Enemy → State: Attack
+Enemy → State: Flee</code></pre><p>Ini sangat dianjurkan ketika belajar AI.</p>
+<p>Jangan hanya mengamati gerakan NPC.</p>
+<p>Amati juga:</p>
+<pre><code class="hljs language-plaintext">State apa yang aktif?
+Condition apa yang menyebabkan transition?</code></pre><hr>
+<h1 id="67-tabel-transition-praktikum">67. Tabel Transition Praktikum</h1><table>
+<thead>
+<tr>
+<th>Current State</th>
+<th>Condition</th>
+<th>Next State</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Patrol</td>
+<td>Player terlihat</td>
+<td>Chase</td>
+</tr>
+<tr>
+<td>Chase</td>
+<td>Player dalam attack range</td>
+<td>Attack</td>
+</tr>
+<tr>
+<td>Chase</td>
+<td>Player hilang selama 2 detik</td>
+<td>Patrol</td>
+</tr>
+<tr>
+<td>Attack</td>
+<td>Player keluar attack exit range</td>
+<td>Chase</td>
+</tr>
+<tr>
+<td>Attack</td>
+<td>Player tidak terlihat</td>
+<td>Chase</td>
+</tr>
+<tr>
+<td>Patrol</td>
+<td>HP rendah</td>
+<td>Flee</td>
+</tr>
+<tr>
+<td>Chase</td>
+<td>HP rendah</td>
+<td>Flee</td>
+</tr>
+<tr>
+<td>Attack</td>
+<td>HP rendah</td>
+<td>Flee</td>
+</tr>
+<tr>
+<td>Flee</td>
+<td>Sudah aman</td>
+<td>Patrol</td>
+</tr>
+<tr>
+<td>Any</td>
+<td>HP &lt;= 0</td>
+<td>Dead</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="68-diagram-fsm-final">68. Diagram FSM Final</h1><pre><code class="hljs language-plaintext">                   PLAYER TERLIHAT
+            ┌─────────────────────────┐
+            │                         ▼
+        ┌────────┐                ┌────────┐
+        │ PATROL │                │ CHASE  │
+        └────────┘                └────────┘
+             ▲                         │
+             │                         │
+             │ Player hilang           │ distance
+             │ selama 2 detik          │ &lt;= attackRange
+             │                         ▼
+             │                    ┌────────┐
+             │                    │ ATTACK │
+             │                    └────────┘
+             │                         │
+             │                         │
+             │                    distance &gt;
+             │                  attackExitRange
+             │                         │
+             │                         └──→ CHASE
+             │
+             │      sudah aman
+             │          ▲
+             │          │
+             │      ┌────────┐
+             └──────│  FLEE  │
+                    └────────┘
+                         ▲
+                         │
+                      HP rendah
+                         │
+             PATROL / CHASE / ATTACK
+
+
+        Dari STATE mana pun:
+
+               HP &lt;= 0
+                  │
+                  ▼
+              ┌────────┐
+              │  DEAD  │
+              └────────┘</code></pre><hr>
+<h1 id="69-hubungan-setiap-script">69. Hubungan Setiap Script</h1><p>Struktur:</p>
+<pre><code class="hljs language-plaintext">Enemy
+│
+├── NavMeshAgent
+│
+├── EnemyPerception.cs
+│       │
+│       └── CanSeePlayer
+│
+├── EnemyHealth.cs
+│       │
+│       └── CurrentHealth
+│
+└── EnemyFSM.cs
+        │
+        ├── membaca Perception
+        ├── membaca Health
+        └── mengontrol NavMeshAgent
+
+
+Player
+│
+├── CharacterController
+├── SimplePlayerController.cs
+├── PlayerHealth.cs
+└── PlayerAttackTest.cs</code></pre><p>Pemisahan ini penting.</p>
+<p>Jangan membuat satu script dengan ribuan baris yang melakukan semuanya.</p>
+<hr>
+<h1 id="70-separation-of-concern">70. Separation of Concern</h1><p>Setiap script mempunyai tanggung jawab.</p>
+<h2 id="enemyperception">EnemyPerception</h2><p>Menjawab:</p>
+<pre><code class="hljs language-plaintext">Apakah Enemy melihat Player?</code></pre><hr>
+<h2 id="enemyhealth">EnemyHealth</h2><p>Menjawab:</p>
+<pre><code class="hljs language-plaintext">Berapa HP Enemy?</code></pre><hr>
+<h2 id="enemyfsm">EnemyFSM</h2><p>Menjawab:</p>
+<pre><code class="hljs language-plaintext">Enemy harus melakukan apa?</code></pre><hr>
+<h2 id="navmeshagent">NavMeshAgent</h2><p>Menjawab:</p>
+<pre><code class="hljs language-plaintext">Bagaimana Enemy bergerak menuju target?</code></pre><p>Ini membuat sistem lebih mudah:</p>
+<ul>
+<li>dibaca;</li>
+<li>diuji;</li>
+<li>dikembangkan;</li>
+<li>diperbaiki.</li>
+</ul>
+<hr>
+<h1 id="71-istilah-teknis-unity-yang-digunakan">71. Istilah Teknis Unity yang Digunakan</h1><h2 id="gameobject">GameObject</h2><p>Objek dasar di dalam Unity Scene.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">Player
+Enemy
+Ground
+Waypoint
+SafePoint</code></pre><hr>
+<h2 id="component">Component</h2><p>Fungsi atau kemampuan yang ditempelkan pada GameObject.</p>
+<p>Contoh Enemy:</p>
+<pre><code class="hljs language-plaintext">Enemy GameObject
+├── Transform
+├── Capsule Collider
+├── NavMeshAgent
+├── EnemyPerception
+├── EnemyHealth
+└── EnemyFSM</code></pre><p>Unity menggunakan pendekatan:</p>
+<pre><code class="hljs language-plaintext">GameObject + Components</code></pre><hr>
+<h2 id="transform">Transform</h2><p>Setiap GameObject mempunyai Transform.</p>
+<p>Transform menyimpan:</p>
+<pre><code class="hljs language-plaintext">Position
+Rotation
+Scale</code></pre><p>Contoh:</p>
+<pre><code class="hljs language-plaintext">player.position
+transform.position
+transform.forward</code></pre><hr>
+<h2 id="inspector">Inspector</h2><p>Panel Unity untuk melihat dan mengatur:</p>
+<ul>
+<li>Component;</li>
+<li>parameter;</li>
+<li>reference;</li>
+<li>material;</li>
+<li>transform;</li>
+<li>script field.</li>
+</ul>
+<hr>
+<h2 id="serializefield">SerializeField</h2><p>Membuat field private dapat diedit melalui Inspector:</p>
+<pre><code class="hljs language-plaintext">[SerializeField]
+private float chaseSpeed = 4f;</code></pre><hr>
+<h2 id="monobehaviour">MonoBehaviour</h2><p>Class dasar yang digunakan oleh script Unity yang ditempelkan pada GameObject.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">public class EnemyFSM : MonoBehaviour</code></pre><hr>
+<h2 id="awake">Awake()</h2><p>Dipanggil ketika object/script diinisialisasi.</p>
+<p>Pada praktikum digunakan untuk mengambil reference:</p>
+<pre><code class="hljs language-plaintext">agent = GetComponent&lt;NavMeshAgent&gt;();</code></pre><hr>
+<h2 id="start">Start()</h2><p>Biasanya digunakan untuk initialization sebelum gameplay dimulai.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">ChangeState(EnemyState.Patrol);</code></pre><hr>
+<h2 id="update">Update()</h2><p>Dipanggil setiap frame.</p>
+<p>FSM menggunakan Update untuk:</p>
+<pre><code class="hljs language-plaintext">membaca global condition
+↓
+menjalankan state aktif</code></pre><hr>
+<h2 id="getcomponent">GetComponent</h2><p>Digunakan untuk mengambil component pada GameObject.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">GetComponent&lt;NavMeshAgent&gt;();</code></pre><hr>
+<h2 id="vector3">Vector3</h2><p>Representasi nilai 3 dimensi:</p>
+<pre><code class="hljs language-plaintext">X
+Y
+Z</code></pre><p>Contoh posisi:</p>
+<pre><code class="hljs language-plaintext">Vector3 position;</code></pre><hr>
+<h2 id="vector3distance">Vector3.Distance</h2><p>Menghitung jarak antara dua posisi.</p>
+<pre><code class="hljs language-plaintext">Vector3.Distance(
+    transform.position,
+    player.position
+);</code></pre><hr>
+<h2 id="quaternion">Quaternion</h2><p>Digunakan untuk merepresentasikan rotasi.</p>
+<p>Pada praktikum digunakan ketika Enemy menghadap Player.</p>
+<hr>
+<h2 id="physicsraycast">Physics.Raycast</h2><p>Menguji apakah terdapat object pada sebuah arah tertentu.</p>
+<p>Digunakan untuk:</p>
+<pre><code class="hljs language-plaintext">Line of Sight</code></pre><hr>
+<h2 id="layermask">LayerMask</h2><p>Filter layer untuk physics query seperti Raycast.</p>
+<hr>
+<h2 id="navmeshsurface">NavMeshSurface</h2><p>Komponen untuk mendefinisikan dan membangun area NavMesh.</p>
+<hr>
+<h2 id="navmeshagent">NavMeshAgent</h2><p>Component navigation yang digunakan Enemy untuk mengikuti jalur pada NavMesh.</p>
+<hr>
+<h2 id="setdestination">SetDestination()</h2><p>Memberikan destination kepada NavMeshAgent:</p>
+<pre><code class="hljs language-plaintext">agent.SetDestination(
+    player.position
+);</code></pre><hr>
+<h2 id="isstopped">isStopped</h2><p>Menghentikan atau melanjutkan pergerakan agent.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">agent.isStopped = true;</code></pre><p>digunakan saat Attack.</p>
+<hr>
+<h2 id="pathpending">pathPending</h2><p>Menunjukkan bahwa perhitungan path masih diproses.</p>
+<hr>
+<h2 id="remainingdistance">remainingDistance</h2><p>Mengukur sisa jarak agent menuju destination.</p>
+<p>Digunakan untuk menentukan apakah Enemy telah mencapai waypoint.</p>
+<hr>
+<h1 id="72-masalah-umum-dan-troubleshooting">72. Masalah Umum dan Troubleshooting</h1><h2 id="masalah-1">Masalah 1</h2><p>Enemy tidak bergerak.</p>
+<h3 id="periksa">Periksa:</h3><pre><code class="hljs language-plaintext">Apakah NavMesh sudah dibangun?</code></pre><p>dan:</p>
+<pre><code class="hljs language-plaintext">Apakah Enemy berada di atas NavMesh?</code></pre><hr>
+<h1 id="73-error-setdestination">73. Error SetDestination</h1><p>Jika muncul masalah terkait agent tidak berada pada NavMesh:</p>
+<p>periksa:</p>
+<pre><code class="hljs language-plaintext">1. NavMeshSurface sudah dibuild.
+2. Enemy tepat berada pada area NavMesh.
+3. NavMeshAgent aktif.
+4. Agent Type sesuai dengan NavMesh.</code></pre><hr>
+<h1 id="74-enemy-tidak-melihat-player">74. Enemy Tidak Melihat Player</h1><p>Periksa:</p>
+<pre><code class="hljs language-plaintext">Player reference
+Vision Range
+Vision Angle
+Obstacle Mask</code></pre><p>Pastikan Player tidak berada:</p>
+<pre><code class="hljs language-plaintext">di belakang Enemy</code></pre><p>atau:</p>
+<pre><code class="hljs language-plaintext">terhalang obstacle</code></pre><hr>
+<h1 id="75-enemy-bisa-melihat-menembus-tembok">75. Enemy Bisa Melihat Menembus Tembok</h1><p>Periksa Layer dari obstacle:</p>
+<pre><code class="hljs language-plaintext">Obstacle</code></pre><p>Kemudian periksa:</p>
+<pre><code class="hljs language-plaintext">EnemyPerception
+→ Obstacle Mask
+→ Obstacle ☑</code></pre><p>Jika layer tidak masuk LayerMask, Raycast tidak akan memperlakukannya sebagai penghalang.</p>
+<hr>
+<h1 id="76-enemy-tidak-patrol">76. Enemy Tidak Patrol</h1><p>Periksa:</p>
+<pre><code class="hljs language-plaintext">Patrol Points Size</code></pre><p>harus lebih besar dari 0.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">Size = 4</code></pre><p>dan semua:</p>
+<pre><code class="hljs language-plaintext">Element 0
+Element 1
+Element 2
+Element 3</code></pre><p>harus diisi.</p>
+<hr>
+<h1 id="77-enemy-tidak-attack">77. Enemy Tidak Attack</h1><p>Periksa:</p>
+<pre><code class="hljs language-plaintext">Attack Range</code></pre><p>Gunakan Gizmos.</p>
+<p>Pastikan Player masuk lingkaran:</p>
+<pre><code class="hljs language-plaintext">Attack Range</code></pre><hr>
+<h1 id="78-enemy-tidak-flee">78. Enemy Tidak Flee</h1><p>Periksa:</p>
+<pre><code class="hljs language-plaintext">Low Health Threshold</code></pre><p>Contoh:</p>
+<pre><code class="hljs language-plaintext">30</code></pre><p>Pastikan Enemy mendapat damage hingga:</p>
+<pre><code class="hljs language-plaintext">Current Health &lt;= 30</code></pre><hr>
+<h1 id="79-enemy-tidak-menuju-safepoint">79. Enemy Tidak Menuju SafePoint</h1><p>Periksa:</p>
+<pre><code class="hljs language-plaintext">SafePoint reference</code></pre><p>dan pastikan:</p>
+<pre><code class="hljs language-plaintext">SafePoint</code></pre><p>berada di atas area yang dapat dicapai NavMesh.</p>
+<hr>
+<h1 id="80-npc-berganti-state-terlalu-cepat">80. NPC Berganti State Terlalu Cepat</h1><p>Gejala:</p>
+<pre><code class="hljs language-plaintext">Chase
+Attack
+Chase
+Attack
+Chase
+Attack</code></pre><p>Solusi yang telah digunakan:</p>
+<pre><code class="hljs language-plaintext">attackRange     = 2
+attackExitRange = 2.75</code></pre><p>Ini adalah hysteresis.</p>
+<hr>
+<h1 id="81-eksperimen-mahasiswa-1-vision-range">81. Eksperimen Mahasiswa 1 — Vision Range</h1><p>Ubah:</p>
+<pre><code class="hljs language-plaintext">Vision Range</code></pre><p>dari:</p>
+<pre><code class="hljs language-plaintext">10</code></pre><p>menjadi:</p>
+<pre><code class="hljs language-plaintext">5
+15
+20</code></pre><p>Pertanyaan:</p>
+<blockquote>
+<p>Bagaimana perubahan vision range memengaruhi perilaku Enemy?</p>
+</blockquote>
+<hr>
+<h1 id="82-eksperimen-mahasiswa-2-vision-angle">82. Eksperimen Mahasiswa 2 — Vision Angle</h1><p>Ubah:</p>
+<pre><code class="hljs language-plaintext">90°</code></pre><p>menjadi:</p>
+<pre><code class="hljs language-plaintext">45°
+180°
+360°</code></pre><p>Bandingkan perilaku.</p>
+<hr>
+<h1 id="83-eksperimen-mahasiswa-3-patrol-vs-chase-speed">83. Eksperimen Mahasiswa 3 — Patrol vs Chase Speed</h1><p>Coba:</p>
+<pre><code class="hljs language-plaintext">Patrol Speed = 2
+Chase Speed  = 2</code></pre><p>kemudian:</p>
+<pre><code class="hljs language-plaintext">Patrol Speed = 2
+Chase Speed  = 6</code></pre><p>Diskusikan pengaruhnya terhadap gameplay.</p>
+<hr>
+<h1 id="84-eksperimen-mahasiswa-4-attack-range">84. Eksperimen Mahasiswa 4 — Attack Range</h1><p>Bandingkan:</p>
+<pre><code class="hljs language-plaintext">Attack Range = 1</code></pre><p>dengan:</p>
+<pre><code class="hljs language-plaintext">Attack Range = 4</code></pre><p>Apa dampaknya?</p>
+<hr>
+<h1 id="85-eksperimen-mahasiswa-5-low-health-threshold">85. Eksperimen Mahasiswa 5 — Low Health Threshold</h1><p>Bandingkan:</p>
+<pre><code class="hljs language-plaintext">20
+30
+50
+80</code></pre><p>Enemy dengan:</p>
+<pre><code class="hljs language-plaintext">Low Health Threshold = 80</code></pre><p>akan terlihat jauh lebih defensif.</p>
+<hr>
+<h1 id="86-eksperimen-mahasiswa-6-attack-cooldown">86. Eksperimen Mahasiswa 6 — Attack Cooldown</h1><p>Bandingkan:</p>
+<pre><code class="hljs language-plaintext">0.5
+1.5
+3</code></pre><p>Parameter ini memengaruhi agresivitas Enemy.</p>
+<hr>
+<h1 id="87-tugas-pengembangan-opsional-search-state">87. Tugas Pengembangan Opsional — Search State</h1><p>Tambahkan:</p>
+<pre><code class="hljs language-plaintext">Search</code></pre><p>sehingga alur berubah dari:</p>
+<pre><code class="hljs language-plaintext">Chase
+↓ Player hilang
+Patrol</code></pre><p>menjadi:</p>
+<pre><code class="hljs language-plaintext">Chase
+↓ Player hilang
+Search
+↓ gagal menemukan Player
+Patrol</code></pre><p>Search dapat menggunakan:</p>
+<pre><code class="hljs language-plaintext">lastSeenPosition</code></pre><p>yang merupakan integrasi dengan konsep Memory.</p>
+<hr>
+<h1 id="88-tugas-pengembangan-opsional-alert-state">88. Tugas Pengembangan Opsional — Alert State</h1><p>Tambahkan:</p>
+<pre><code class="hljs language-plaintext">Alert</code></pre><p>Contoh:</p>
+<pre><code class="hljs language-plaintext">Patrol
+↓ mendeteksi sesuatu
+Alert
+↓ Player dikonfirmasi
+Chase</code></pre><hr>
+<h1 id="89-tugas-pengembangan-opsional-heal">89. Tugas Pengembangan Opsional — Heal</h1><p>Saat Enemy sampai SafePoint:</p>
+<pre><code class="hljs language-plaintext">Flee
+↓
+Heal
+↓ HP pulih
+Patrol</code></pre><p>Contoh hierarchical behavior:</p>
+<pre><code class="hljs language-plaintext">Alive
+├── Normal
+│   └── Patrol
+│
+└── Combat
+    ├── Chase
+    ├── Attack
+    └── Flee</code></pre><hr>
+<h1 id="90-tugas-pengembangan-opsional-animation">90. Tugas Pengembangan Opsional — Animation</h1><p>Hubungkan state dengan Animator.</p>
+<p>Contoh:</p>
+<pre><code class="hljs language-plaintext">Patrol → Walk
+Chase  → Run
+Attack → Attack Animation
+Flee   → Run
+Dead   → Death</code></pre><p>FSM tetap menangani keputusan.</p>
+<p>Animator hanya menangani visual animation.</p>
+<hr>
+<h1 id="91-evaluasi-praktikum">91. Evaluasi Praktikum</h1><p>Mahasiswa dinyatakan berhasil jika:</p>
+<ul>
+<li><input disabled="" type="checkbox"> Enemy melakukan Patrol.</li>
+<li><input disabled="" type="checkbox"> Patrol menggunakan waypoint.</li>
+<li><input disabled="" type="checkbox"> Enemy memiliki Field of View.</li>
+<li><input disabled="" type="checkbox"> Obstacle menghalangi penglihatan.</li>
+<li><input disabled="" type="checkbox"> Player terlihat menyebabkan Patrol → Chase.</li>
+<li><input disabled="" type="checkbox"> Enemy mengejar menggunakan NavMeshAgent.</li>
+<li><input disabled="" type="checkbox"> Player dekat menyebabkan Chase → Attack.</li>
+<li><input disabled="" type="checkbox"> Attack memiliki cooldown.</li>
+<li><input disabled="" type="checkbox"> Player menjauh menyebabkan Attack → Chase.</li>
+<li><input disabled="" type="checkbox"> Enemy tidak langsung lupa Player.</li>
+<li><input disabled="" type="checkbox"> HP rendah menyebabkan Flee.</li>
+<li><input disabled="" type="checkbox"> Flee menuju SafePoint.</li>
+<li><input disabled="" type="checkbox"> Flee dapat selesai.</li>
+<li><input disabled="" type="checkbox"> HP 0 menyebabkan Dead.</li>
+<li><input disabled="" type="checkbox"> State dapat dilihat melalui debug.</li>
+<li><input disabled="" type="checkbox"> Vision dan attack range terlihat melalui Gizmos.</li>
+</ul>
+<hr>
+<h1 id="92-pertanyaan-analisis">92. Pertanyaan Analisis</h1><p>Jawab setelah praktikum.</p>
+<h3 id="1">1.</h3><p>Apa perbedaan antara <strong>State</strong>, <strong>Condition</strong>, dan <strong>Transition</strong>?</p>
+<h3 id="2">2.</h3><p>Mengapa <code>NavMeshAgent</code> bukan merupakan FSM?</p>
+<h3 id="3">3.</h3><p>Apa fungsi <code>EnemyPerception</code>?</p>
+<h3 id="4">4.</h3><p>Mengapa Line of Sight menggunakan Raycast?</p>
+<h3 id="5">5.</h3><p>Apa perbedaan <code>Tag</code> dan <code>Layer</code>?</p>
+<h3 id="6">6.</h3><p>Mengapa Attack membutuhkan cooldown?</p>
+<h3 id="7">7.</h3><p>Mengapa <code>attackRange</code> dan <code>attackExitRange</code> dibuat berbeda?</p>
+<h3 id="8">8.</h3><p>Apa masalah yang terjadi jika keduanya bernilai sama?</p>
+<h3 id="9">9.</h3><p>Mengapa condition Dead diperiksa sebelum Flee?</p>
+<h3 id="10">10.</h3><p>Mengapa FSM sebaiknya tidak seluruhnya ditulis dalam satu <code>if-else</code> besar?</p>
+<hr>
+<h1 id="93-alur-keseluruhan-praktikum">93. Alur Keseluruhan Praktikum</h1><pre><code class="hljs language-plaintext">START
+  │
+  ▼
+PATROL
+  │
+  │ CanSeePlayer
+  ▼
+CHASE
+  │
+  │ distance &lt;= attackRange
+  ▼
+ATTACK
+  │
+  ├── Player menjauh ───→ CHASE
+  │
+  │ HP rendah
+  ▼
+FLEE
+  │
+  │ Safe
+  ▼
+PATROL
+
+
+GLOBAL:
+
+HP &lt;= 0
+   │
+   ▼
+ DEAD</code></pre><hr>
+<h1 id="94-konsep-ai-yang-telah-digabungkan">94. Konsep AI yang Telah Digabungkan</h1><p>Praktikum ini sebenarnya menggabungkan beberapa materi.</p>
+<pre><code class="hljs language-plaintext">Perception
+      │
+      ▼
+Field of View
+Raycast
+Distance
+      │
+      ▼
+Finite State Machine
+      │
+      ▼
+Decision Making
+      │
+      ▼
+NavMesh Navigation
+      │
+      ▼
+Movement
+      │
+      ▼
+Action / Attack</code></pre><p>Dengan demikian mahasiswa dapat melihat bahwa sistem Game AI bukan sekadar satu algoritma.</p>
+<p>Beberapa subsistem bekerja bersama.</p>
+<hr>
+<h1 id="95-rekomendasi-praktikum-terbaik">95. Rekomendasi Praktikum Terbaik</h1><p>Untuk Praktikum 05, implementasi yang paling direkomendasikan adalah:</p>
+<h2 id="core-praktikum">**Core Praktikum**</h2><pre><code class="hljs language-plaintext">Enum FSM
++
+Patrol
++
+Chase
++
+Attack
++
+Flee
++
+Dead
++
+NavMeshAgent
++
+FOV + Raycast
++
+Health
++
+Attack Cooldown
++
+Hysteresis
++
+Debug Gizmos</code></pre><h3 id="tidak-disarankan-sebagai-requirement-utama">Tidak disarankan sebagai requirement utama:</h3><pre><code class="hljs language-plaintext">Class-based FSM
+Hierarchical FSM penuh
+Animation kompleks
+Search
+Alert
+Utility AI
+Behavior Tree</code></pre><p>Bukan karena konsep tersebut tidak penting, tetapi karena akan menggeser fokus praktikum dari:</p>
+<pre><code class="hljs language-plaintext">memahami FSM</code></pre><p>menjadi:</p>
+<pre><code class="hljs language-plaintext">mengelola kompleksitas software.</code></pre><hr>
+<h1 id="96-pembagian-level-praktikum-yang-direkomendasikan">96. Pembagian Level Praktikum yang Direkomendasikan</h1><h2 id="level-a-wajib">LEVEL A — Wajib</h2><pre><code class="hljs language-plaintext">Patrol
+Chase
+Attack
+Flee
+Dead</code></pre><p>Semua mahasiswa harus berhasil menyelesaikannya.</p>
+<hr>
+<h2 id="level-b-penguatan">LEVEL B — Penguatan</h2><pre><code class="hljs language-plaintext">FOV
+Raycast
+Cooldown
+Hysteresis
+Lost Player Timer
+Gizmos</code></pre><p>Direkomendasikan masuk ke modul utama karena konsep AI menjadi jauh lebih jelas.</p>
+<hr>
+<h2 id="level-c-tantangan">LEVEL C — Tantangan</h2><p>Pilih satu:</p>
+<pre><code class="hljs language-plaintext">Search State
+Alert State
+Heal State
+Animation
+Multiple Safe Points
+Dynamic Flee Destination
+UI State Display</code></pre><p>Level ini dapat menjadi tugas pengembangan.</p>
+<hr>
+<h1 id="97-mengapa-pilihan-ini-direkomendasikan">97. Mengapa Pilihan Ini Direkomendasikan?</h1><p>Karena praktikum memberikan hubungan yang sangat jelas:</p>
+<pre><code class="hljs language-plaintext">Perception
+↓
+Condition
+↓
+Transition
+↓
+State
+↓
+Navigation
+↓
+Action</code></pre><p>Mahasiswa tidak hanya melihat NPC berjalan.</p>
+<p>Mahasiswa dapat menjelaskan:</p>
+<blockquote>
+<p>Enemy mengejar Player karena <code>CanSeePlayer</code> menjadi true sehingga FSM melakukan transition dari Patrol ke Chase, kemudian state Chase memerintahkan NavMeshAgent memperbarui destination ke posisi Player.</p>
+</blockquote>
+<p>Itulah tujuan pembelajaran yang jauh lebih penting daripada hanya menghasilkan NPC yang tampak pintar.</p>
+<hr>
+<h1 id="98-hasil-akhir-yang-diharapkan">98. Hasil Akhir yang Diharapkan</h1><p>Saat praktikum selesai:</p>
+<pre><code class="hljs language-plaintext">1. Enemy berpatroli.
+
+2. Player mendekati Enemy.
+
+3. Enemy melihat Player.
+
+4. FSM:
+   Patrol → Chase
+
+5. Enemy mengikuti Player
+   menggunakan NavMeshAgent.
+
+6. Player mendekat.
+
+7. FSM:
+   Chase → Attack
+
+8. Enemy menyerang dengan cooldown.
+
+9. Player menyerang Enemy.
+
+10. Enemy HP &lt;= threshold.
+
+11. FSM:
+    Attack → Flee
+
+12. Enemy menuju SafePoint.
+
+13. Enemy merasa aman.
+
+14. FSM:
+    Flee → Patrol
+
+15. Jika HP = 0:
+    Any State → Dead</code></pre><hr>
+<h1 id="99-kesimpulan">99. Kesimpulan</h1><p>Pada praktikum ini mahasiswa telah mengimplementasikan <strong>Finite State Machine</strong> sebagai mekanisme decision making NPC.</p>
+<p>Konsep utama yang digunakan:</p>
+<pre><code class="hljs language-plaintext">State
+Transition
+Condition
+Priority
+Enter State
+Update State
+Exit State
+Timer
+Hysteresis
+Global Transition</code></pre><p>FSM kemudian dihubungkan dengan:</p>
+<pre><code class="hljs language-plaintext">Perception
+Navigation
+Movement
+Health
+Combat
+Debugging</code></pre><p>Sehingga menghasilkan Enemy AI:</p>
+<pre><code class="hljs language-plaintext">Patrol
+   ↓
+Chase
+   ↓
+Attack
+   ↓
+Flee</code></pre><p>dengan:</p>
+<pre><code class="hljs language-plaintext">Dead</code></pre><p>sebagai global/final state.</p>
+<p>Praktikum ini menjadi dasar yang baik sebelum mahasiswa mempelajari pendekatan decision making yang lebih kompleks seperti:</p>
+<pre><code class="hljs language-plaintext">Hierarchical FSM
+Behavior Tree
+Utility AI</code></pre><hr>
+<h1 id="ringkasan-script">Ringkasan Script</h1><pre><code class="hljs language-plaintext">Scripts/
+│
+├── SimplePlayerController.cs
+│   └── Menggerakkan Player
+│
+├── PlayerHealth.cs
+│   └── Menyimpan health Player
+│
+├── PlayerAttackTest.cs
+│   └── Memberi damage ke Enemy untuk testing
+│
+├── EnemyPerception.cs
+│   ├── Vision Range
+│   ├── Vision Angle
+│   └── Raycast Line of Sight
+│
+├── EnemyHealth.cs
+│   └── Menyimpan health Enemy
+│
+└── EnemyFSM.cs
+    ├── Patrol
+    ├── Chase
+    ├── Attack
+    ├── Flee
+    └── Dead</code></pre><h1 id="checklist-akhir-sebelum-play">Checklist Akhir Sebelum Play</h1><ul>
+<li><input disabled="" type="checkbox"> AI Navigation tersedia.</li>
+<li><input disabled="" type="checkbox"> Ground sudah masuk proses NavMesh build.</li>
+<li><input disabled="" type="checkbox"> NavMesh sudah berhasil dibuat.</li>
+<li><input disabled="" type="checkbox"> Enemy berada di atas NavMesh.</li>
+<li><input disabled="" type="checkbox"> Enemy memiliki NavMeshAgent.</li>
+<li><input disabled="" type="checkbox"> Player reference sudah terpasang.</li>
+<li><input disabled="" type="checkbox"> Patrol Points sudah diisi.</li>
+<li><input disabled="" type="checkbox"> SafePoint sudah diisi.</li>
+<li><input disabled="" type="checkbox"> EnemyPerception sudah terpasang.</li>
+<li><input disabled="" type="checkbox"> Obstacle menggunakan Layer <code>Obstacle</code>.</li>
+<li><input disabled="" type="checkbox"> Obstacle Mask sudah memilih <code>Obstacle</code>.</li>
+<li><input disabled="" type="checkbox"> EnemyHealth sudah terpasang.</li>
+<li><input disabled="" type="checkbox"> PlayerHealth sudah terpasang.</li>
+<li><input disabled="" type="checkbox"> EnemyFSM sudah terpasang.</li>
+<li><input disabled="" type="checkbox"> PlayerAttackTest sudah mendapatkan Enemy reference.</li>
+<li><input disabled="" type="checkbox"> Vision Range terlihat melalui Gizmos.</li>
+<li><input disabled="" type="checkbox"> Attack Range terlihat melalui Gizmos.</li>
+</ul>
+<p>Jika seluruh checklist terpenuhi, project siap diuji.</p>
+</article></div></div></section></main></div></div>
+  
+
+</body></html>
